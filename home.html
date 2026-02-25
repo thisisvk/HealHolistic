@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YX7EHPL46"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8YX7EHPL46');
+    </script>
+    
+    <!-- Primary Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#2A0C4E">
+    <meta name="description" content="Rekha Malhotra - Spiritual Healer & Energy Alchemist. Experience transformative healing for mind, body, and soul through divine energy work and spiritual guidance.">
+    <meta name="keywords" content="spiritual healing, energy healer, Rekha Malhotra, holistic therapy, chakra balancing, reiki, meditation, spiritual guidance">
+    <meta name="author" content="Rekha Malhotra">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://healholistic.in/">
+    <meta property="og:title" content="Rekha Malhotra | Spiritual Healer & Energy Alchemist">
+    <meta property="og:description" content="Experience transformative healing for mind, body, and soul through divine energy work and spiritual guidance with Rekha Malhotra.">
+    <meta property="og:image" content="https://healholistic.in/rekha.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://healholistic.in/">
+    <meta property="twitter:title" content="Rekha Malhotra | Spiritual Healer & Energy Alchemist">
+    <meta property="twitter:description" content="Experience transformative healing for mind, body, and soul through divine energy work and spiritual guidance with Rekha Malhotra.">
+    <meta property="twitter:image" content="https://healholistic.in/rekha.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://healholistic.in/" />
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favpink.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="favicon/favwhite.png" type="image/png" media="(prefers-color-scheme: dark)">
+    
+    <!-- iOS specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Standard for all devices -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <title>Rekha Malhotra | Spiritual Healer & Energy Alchemist | Heal Holistic</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="final-cta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <script src="form.js"></script>
+    <script>
+        // Show/hide mobile activate section based on screen size
+        document.addEventListener('DOMContentLoaded', function() {
+            function updateMobileActivate() {
+                const mobileActivate = document.querySelector('.mobile-activate');
+                const desktopActivate = document.querySelector('.activate-section');
+                
+                if (window.innerWidth <= 767) { // Mobile
+                    if (mobileActivate) mobileActivate.style.display = 'block';
+                    if (desktopActivate) desktopActivate.style.display = 'none';
+                } else { // Desktop
+                    if (mobileActivate) mobileActivate.style.display = 'none';
+                    if (desktopActivate) desktopActivate.style.display = 'block';
+                }
+            }
+            
+            // Initial update
+            updateMobileActivate();
+            
+            // Update on window resize
+            window.addEventListener('resize', updateMobileActivate);
+        });
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="land.css">
+    <style>
+        /* Mobile Menu Styles */
+        @media (max-width: 1023px) {
+            /* Mobile Menu Button */
+            .mobile-hamburger {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1000;
+                cursor: pointer;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                padding: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            
+            .mobile-hamburger img {
+                width: 20px;
+                height: 20px;
+                opacity: 1;
+            }
+            
+            /* Mobile Menu Overlay */
+            .mobile-menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #4F1C4C;
+                z-index: 999;
+                display: none;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 80px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+            
+            .mobile-menu-overlay.active {
+                display: flex;
+                animation: fadeIn 0.3s ease;
+            }
+            
+            .mobile-nav-links {
+                list-style: none;
+                padding: 0;
+                margin: 18px;
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .mobile-nav-links a {
+                color: white;
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                transition: color 0.3s ease;
+                display: block;
+                padding: 14px 0;
+                opacity: 1;
+            }
+            
+            .mobile-nav-links a:hover {
+                color: #e4aef2;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        }
+        
+        /* Desktop styles - hide mobile elements */
+        @media (min-width: 1024px) {
+            .mobile-hamburger,
+            .mobile-menu-overlay {
+                display: none !important;
+            }
+        }
+
+        /* Offer Card Hover Effect */
+        .offer-card:hover {
+            background-color: #F7EABF !important;
+            transition: background-color 0.3s ease;
+        }
+        
+        .offer-card:hover .card-image {
+            background-color: #F7EABF !important;
+            transition: background-color 0.3s ease;
+        }
+    
+        
+        @media (max-width: 1023px) {
+
+            
+            /* Hide desktop nav on mobile */
+            .desktop-nav {
+                display: none !important;
+            }
+            
+            /* Ensure the menu appears above other content */
+            html, body {
+                overflow-x: hidden;
+                position: relative;
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .mobile-menu-container, .mobile-hamburger {
+                display: none !important;
+            }
+        }
+        
+        @media (max-width: 1023px) {
+            /* Hide all navigation elements on mobile except our custom mobile menu */
+            nav, .nav-container, .mobile-menu-container, 
+            .mobile-menu-button, .mobile-menu, .nav-links,
+            .mobile-menu-button img {
+                display: none !important;
+                visibility: hidden !important;
+                opacity: 0 !important;
+                pointer-events: none !important;
+                height: 0 !important;
+                width: 0 !important;
+                position: absolute !important;
+                left: -9999px !important;
+            }
+            
+            /* Ensure no space is taken by hidden elements */
+            body {
+                margin-top: 0 !important;
+                padding-top: 0 !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="main-page" itemscope itemtype="https://schema.org/WebPage" style="background-color: #F4DEFA; margin: 0; padding: 0; overflow-x: hidden;">
+    <!-- Mobile Hamburger Menu -->
+    <div class="mobile-hamburger" id="mobileHamburger">
+        <img src="ham.svg" alt="Menu" width="24" height="24" aria-label="Toggle navigation menu">
+    </div>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <ul class="mobile-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Reiki.html">Quantum Reiki</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blogs</a></li>
+            <li><a href="form.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section with group 3.svg background -->
+    <section class="main-hero">
+        <div class="main-hero-content">
+            <h1 class="main-hero-title" style="letter-spacing: 1px; line-height: 1.6;">You didn't <span style="letter-spacing: 0.2em; margin-right: -0.1em;">f</span>ind this page by accident.<br style="display: block; content: ''; margin: 18px 0;">It's your soul's calling from within.</h1>
+            <p class="main-hero-subtitle" style="font-family: 'Quicksand', sans-serif; font-weight: 400; font-size: 24px; line-height: 32px; letter-spacing: 0; color: #FFFFFF; width: 508px; height: 64px; text-align: center; display: flex; align-items: center; justify-content: center; margin: 0 auto;">You've tried everything therapy, journaling,<br>self-help, even silence</p>
+        </div>
+    </section>
+    <!-- Desktop Navigation -->
+    <nav class="desktop-nav">
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <img src="logopink.png" alt="Logo" class="logo-img" style="height: 25px;">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Reiki.html">Quantum Reiki</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileOverlay = document.getElementById('mobileMenuOverlay');
+            
+            function closeMenu() {
+                mobileMenu.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            // Mobile hamburger menu functionality
+            const mobileHamburger = document.getElementById('mobileHamburger');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const menuIcon = mobileHamburger.querySelector('img');
+            let isMenuOpen = false;
+            
+            function toggleMenu() {
+                isMenuOpen = !isMenuOpen;
+                mobileMenuOverlay.classList.toggle('active');
+                document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+                
+                // Toggle between ham.svg and close.svg
+                if (isMenuOpen) {
+                    menuIcon.src = 'close.svg';
+                    menuIcon.style.width = '36px';
+                    menuIcon.style.height = '36px';
+                } else {
+                    menuIcon.src = 'ham.svg';
+                    menuIcon.style.width = '20px';
+                    menuIcon.style.height = '20px';
+                }
+            }
+            
+            mobileHamburger.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleMenu();
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(e) {
+                if (mobileMenuOverlay.classList.contains('active') && 
+                    !mobileMenuOverlay.contains(e.target) && 
+                    e.target !== mobileHamburger && 
+                    !mobileHamburger.contains(e.target)) {
+                    toggleMenu();
+                }
+            });
+
+            // Toggle menu on button click
+            if (menuButton) {
+                menuButton.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    mobileMenu.classList.toggle('active');
+                    mobileOverlay.classList.toggle('active');
+                    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+                    
+                    // Add transition classes
+                    document.body.classList.add('transition-active', 'animation-active');
+                    
+                    // Force reflow to ensure the class is applied
+                    void document.body.offsetHeight;
+                    
+                    // Set nav background directly
+                    const nav = document.querySelector('nav');
+                    if (nav) {
+                        nav.style.cssText = 'background: #F4DEFA !important; background-color: #F4DEFA !important;';
+                    }
+                    
+                    // Start the animations
+                    document.body.classList.add('transition-start');
+                });
+            }
+            
+            // Close menu when clicking overlay
+            if (mobileOverlay) {
+                mobileOverlay.addEventListener('click', closeMenu);
+            }
+            
+            // Close menu when clicking a menu link
+            const menuLinks = document.querySelectorAll('.mobile-menu a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+        });
+    </script>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 style="font-family: Poltawski Nowy;
+font-weight: 700;
+font-size: 64px;
+line-height: 100%;
+letter-spacing: 0%;
+">Meet Rekha Malhotra</h2>
+<div class="about-icons">
+                <div class="stats stats-border">
+                    <div class="stat-item">
+                        <div class="stat-icon"><img src="1-icon.svg" alt=""></div>
+                        <div class="stat-label">Energy <br>Healing</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><img src="2-icon.svg" alt=""></div>
+                        <div class="stat-label">Global Soul<br> Guide</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-icon"><img src="3-icon.svg" alt=""></div>
+                        <div class="stat-label">Reiki<br>Grandmaster</div>
+                    </div>
+                </div>
+</div>
+                <p style="font-family: Quicksand;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    margin-top: 43px;
+    color: #6D436A;">With <b>18+ years of experience</b>, she blends <b>Quantum Reiki, chakra detox, soul retrieval, and sacred symbols</b> to create transformational experiences beyond talk.</p>
+                <div class="stats" style="width: 651px;
+height: 133px;
+gap: 33px;
+margin-top: 43px;
+position: relative;
+">
+                    <div style="position: absolute;
+top: -25px;
+left: 18px;
+width: 81px;
+height: 20px;
+font-family: Quicksand;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #7C4681;
+z-index: 1;">Trusted by</div>
+                    <div class="stat-item" style="background: #ECD5F2;
+width: 309px;
+height: 106px;
+border-radius: 10px;
+padding: 18px;
+box-shadow: 3px 3px 5.8px 0px #B7A2B680;"
+data-label="Trusted by">
+                        <div class="stat-number">180,000+</div>
+                        <div style="font-family: Quicksand;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#7C4681;
+margin-top: 10px;
+">Followers</div>
+                    </div>
+                    <div style="position: absolute;
+top: -25px;
+left: 360px;
+width: 81px;
+height: 20px;
+font-family: Quicksand;
+font-weight: 500;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: #7C4681;
+z-index: 1;">Across</div>
+                    <div class="stat-item" style="background: #ECD5F2;
+width: 309px;
+height: 106px;
+border-radius: 10px;
+padding: 18px;
+box-shadow: 3px 3px 5.8px 0px #B7A2B680;"
+data-label="Across">
+                        <div class="stat-number">22</div>
+                        <div style="font-family: Quicksand;
+font-weight: 500;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#7C4681;
+margin-top: 10px;
+;
+">Countries</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-image">
+                <img src="rekha.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section 1 -->
+    <div class="container" style="align-items: baseline; height: auto; margin-bottom: 40px;">
+        <section class="cta-section">
+            <h2 style="width: 547px; height: 94px;">Come Meet the Healer Your Soul's been Seeking</h2>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <a href="about.html" class="cta-btn"
+                    style="display: inline-flex; align-items: center; justify-content: center; width: 210px; height: 44px; border-radius: 5px; text-decoration: none; padding: 12px 18px; font-size: 14px; line-height: 1.2; margin-left: 750px; gap: 10px; opacity: 1;">Know Her Story</a>
+            </div>
+        </section>
+    </div>
+    
+    <!--Spiritual Section-->
+    <section class="spiritual-section" style="background: url('spritual.svg') no-repeat center/cover; width: 100%; max-width: 100%; height: 700px; margin: 0; padding: 0; overflow: hidden;">
+        <div class="container" style="width: 100%; max-width: 100%; margin: 0; padding: 0; position: relative; z-index: 2; overflow: hidden;">
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 20px 370px 20px; box-sizing: border-box;">
+                <div class="section-header" style="text-align: center; margin-bottom: 40px; width: 100%;">
+                    <h2 class="section-subtitle" style="color: #E4AEF2; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 18px; line-height: 100%; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 15px;">
+                        Why Heal Holistic
+                    </h2>
+                    <h1 style="width: 100%; max-width: 1072px; color: #FFFFFF; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 36px; line-height: 1.3; letter-spacing: 0%; text-align: center; margin: 0 auto; opacity: 1;">
+                        Not all healing is visible. Not all pain is physical.<br>
+                        At Heal Holistic, we work with Energy, Emotion, & Essence
+                    </h1>
+                </div>
+                
+                <div class="icons-row" style="display: flex; justify-content: center; gap: 40px; margin: 0 auto; max-width: 1100px; width: 100%; flex-wrap: wrap;">
+                    <!-- Icon 1 -->
+                    <div class="icon-container" style="width: 321px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <img src="frame 50.png" alt="Energy" style="max-width: 100%; max-height: 100%; object-fit: contain; border: none; background: transparent;">
+                    </div>
+                    
+                    <!-- Icon 2 -->
+                    <div class="icon-container" style="width: 321px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <img src="frame 52.png" alt="Emotion" style="max-width: 100%; max-height: 100%; object-fit: contain; border: none; background: transparent;">
+                    </div>
+                    
+                    <!-- Icon 3 -->
+                    <div class="icon-container" style="width: 321px; height: 80px; display: flex; align-items: center; justify-content: center;">
+                        <img src="frame 53.png" alt="Essence" style="max-width: 100%; max-height: 100%; object-fit: contain; border: none; background: transparent;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Yellow Spacer with Offer and Activate Sections -->
+    <div style="width: 100%; max-width: 100%; background: #FAF0D2; position: relative; padding: 0 0 60px 0; margin: 0;">
+        <div style="max-width: 1282px; width: 100%; margin: 0 auto; position: relative; padding: 0;">
+            <!-- Offer Section -->
+            <section class="offer-section" style="padding-top: 80px; padding-bottom: 0;">
+                <div style="max-width: 1200px; margin: 0 auto 48px;">
+                    <div style="width: 100%; margin-bottom: 48px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; position: relative; padding-bottom: 12px;">
+                            <h2 style="font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 36px; line-height: 100%; letter-spacing: 0%; color: #A99966; margin: 0 0 0 60px; display: flex; align-items: center; position: relative; z-index: 1; background: #FAF0D2; padding-right: 20px;">
+                                Explore divinely guided offerings
+                            </h2>
+                            <div style="position: relative; z-index: 1; background: #FAF0D2; padding-left: 20px;">
+                                <a href="services.html#tabs-row" style="display: flex; flex-direction: row; align-items: center; padding: 0; gap: 8px; text-decoration: none; color: inherit;">
+                                    <span style="font-family: 'Quicksand', sans-serif; font-size: 14px; line-height: 1.2;">Explore All</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div style="position: absolute; bottom: -7px; left: 60px; right: 0; height: 1px; background-color: #A99966; z-index: 0;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Cards Grid -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1119px; margin: 0 auto;">
+                        <!-- Row 1 -->
+                        <!-- Card 1 -->
+                        <div class="offer-card" data-tab-id="tab1" style="width: 357px; min-height: 420px; background: #FAF0D2; border-radius: 15px; padding: 12px; display: flex; flex-direction: column; gap: 12px; box-sizing: border-box; cursor: pointer;">
+                            <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; background: #FAF0D2; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <img src="Rectangle 25.png" alt="Offer 2" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content" style="width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 4px 0 8px 0; flex-grow: 1;">
+                                <div style="display: flex; flex-direction: row; gap: 5px;">
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.8337 7.50033C12.8337 10.7203 10.2203 13.3337 7.00033 13.3337C3.78033 13.3337 1.16699 10.7203 1.16699 7.50033C1.16699 4.28033 3.78033 1.66699 7.00033 1.66699C10.2203 1.66699 12.8337 4.28033 12.8337 7.50033Z" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.16418 9.35503L7.35585 8.27586C7.04085 8.08919 6.78418 7.64003 6.78418 7.27253V4.88086" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        60 Mins
+                                    </span>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.99969 8.33434C8.00485 8.33434 8.81969 7.51949 8.81969 6.51434C8.81969 5.50918 8.00485 4.69434 6.99969 4.69434C5.99453 4.69434 5.17969 5.50918 5.17969 6.51434C5.17969 7.51949 5.99453 8.33434 6.99969 8.33434Z" stroke="#0F0F0F"/>
+                                            <path d="M2.11133 5.45283C3.2605 0.40116 10.7447 0.406994 11.888 5.45866C12.5588 8.42199 10.7155 10.9303 9.09967 12.482C7.92717 13.6137 6.07217 13.6137 4.89383 12.482C3.28383 10.9303 1.4405 8.41616 2.11133 5.45283Z" stroke="#0F0F0F"/>
+                                        </svg>
+                                        Online
+                                    </span>
+                                </div>
+                                <h3 style="margin: 0; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 20px; line-height: 1.2; color: #0F0F0F;">Heal Holistic Energy Healing</h3>
+                                <p style="margin: 0; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.4; color: #948558;">Feeling stuck, drained, or emotionally heavy? Step into this soul-nourishing group session and immerse yourself in powerful collective energy healing. Cleanse your aura, realign your chakras, and elevate your vibration to leave feeling lighter, clearer, and deeply connected to your inner peace.</p>
+                                <a href="services.html#tab1" style="display: inline-flex; align-items: center; margin-top: 12px; font-family: 'Quicksand', sans-serif; font-size: 14px; font-weight: 600; color: #0F0F0F; text-decoration: none;">
+                                    View Details
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                                        <path d="M6 4L10 8L6 12" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 2 -->
+                        <div class="offer-card" data-tab-id="tab2" style="width: 357px; min-height: 420px; background: #FAF0D2; border-radius: 15px; padding: 12px; display: flex; flex-direction: column; gap: 12px; box-sizing: border-box; cursor: pointer;">
+                            <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; background: #FAF0D2; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <img src="Rectangle 25 (1).png" alt="Energy Healing Session" width="357" height="200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content" style="width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 4px 0 8px 0; flex-grow: 1;">
+                                <div style="display: flex; flex-direction: row; gap: 5px;">
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.8337 7.50033C12.8337 10.7203 10.2203 13.3337 7.00033 13.3337C3.78033 13.3337 1.16699 10.7203 1.16699 7.50033C1.16699 4.28033 3.78033 1.66699 7.00033 1.66699C10.2203 1.66699 12.8337 4.28033 12.8337 7.50033Z" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.16418 9.35503L7.35585 8.27586C7.04085 8.08919 6.78418 7.64003 6.78418 7.27253V4.88086" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        45 Mins
+                                    </span>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.99969 8.33434C8.00485 8.33434 8.81969 7.51949 8.81969 6.51434C8.81969 5.50918 8.00485 4.69434 6.99969 4.69434C5.99453 4.69434 5.17969 5.50918 5.17969 6.51434C5.17969 7.51949 5.99453 8.33434 6.99969 8.33434Z" stroke="#0F0F0F"/>
+                                            <path d="M2.11133 5.45283C3.2605 0.40116 10.7447 0.406994 11.888 5.45866C12.5588 8.42199 10.7155 10.9303 9.09967 12.482C7.92717 13.6137 6.07217 13.6137 4.89383 12.482C3.28383 10.9303 1.4405 8.41616 2.11133 5.45283Z" stroke="#0F0F0F"/>
+                                        </svg>
+                                        Online / Offline
+                                    </span>
+                                </div>
+                                <h3 style="margin: 0; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 20px; line-height: 1.2; color: #0F0F0F;">Dynamic Healing Session</h3>
+                                <p style="margin: 0; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.4; color: #948558;"> Ready for deep, personal healing? This 1:1 session is tailored to your unique emotional, energetic, and physical challenges. Whether you’re facing stress, spiritual blocks, or limiting beliefs around health, wealth, success, and abundance, this transformational session blends intuitive guidance, energy healing, and chakra balancing to help you break through and elevate your life.</p>
+                                <a href="services.html#tab2" style="display: inline-flex; align-items: center; margin-top: 12px; font-family: 'Quicksand', sans-serif; font-size: 14px; font-weight: 600; color: #0F0F0F; text-decoration: none;">
+                                    View Details
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                                        <path d="M6 4L10 8L6 12" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 3 -->
+                        <div class="offer-card" data-tab-id="tab3" style="width: 357px; min-height: 420px; background: #FAF0D2; border-radius: 15px; padding: 12px; display: flex; flex-direction: column; gap: 12px; box-sizing: border-box; cursor: pointer;">
+                            <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; background: #FAF0D2; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <img src="Rectangle 25 (2).png" alt="Chakra Balancing Therapy" width="357" height="200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content" style="width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 4px 0 8px 0; flex-grow: 1;">
+                                <div style="display: flex; flex-direction: row; gap: 5px;">
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.8337 7.50033C12.8337 10.7203 10.2203 13.3337 7.00033 13.3337C3.78033 13.3337 1.16699 10.7203 1.16699 7.50033C1.16699 4.28033 3.78033 1.66699 7.00033 1.66699C10.2203 1.66699 12.8337 4.28033 12.8337 7.50033Z" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.16418 9.35503L7.35585 8.27586C7.04085 8.08919 6.78418 7.64003 6.78418 7.27253V4.88086" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        60 Mins
+                                    </span>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.99969 8.33434C8.00485 8.33434 8.81969 7.51949 8.81969 6.51434C8.81969 5.50918 8.00485 4.69434 6.99969 4.69434C5.99453 4.69434 5.17969 5.50918 5.17969 6.51434C5.17969 7.51949 5.99453 8.33434 6.99969 8.33434Z" stroke="#0F0F0F"/>
+                                            <path d="M2.11133 5.45283C3.2605 0.40116 10.7447 0.406994 11.888 5.45866C12.5588 8.42199 10.7155 10.9303 9.09967 12.482C7.92717 13.6137 6.07217 13.6137 4.89383 12.482C3.28383 10.9303 1.4405 8.41616 2.11133 5.45283Z" stroke="#0F0F0F"/>
+                                        </svg>
+                                        Online 
+                                    </span>
+                                </div>
+                                <h3 style="margin: 0; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 20px; line-height: 1.2; color: #0F0F0F;">Full Moon Healing & Meditation</h3>
+                                <p style="margin: 0; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.4; color: #948558;"> The Full Moon is a powerful time for release and renewal. Join this sacred group session to shed emotional burdens, karmic residue, energetic heaviness, and subconscious blocks. Under the luminous glow of the Full Moon, we’ll journey together to heal, transform, and reset your body, mind, and soul.</p>
+                                <a href="services.html#tab3" style="display: inline-flex; align-items: center; margin-top: 12px; font-family: 'Quicksand', sans-serif; font-size: 14px; font-weight: 600; color: #0F0F0F; text-decoration: none;">
+                                    View Details
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                                        <path d="M6 4L10 8L6 12" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Row 2 - Duplicate for second row -->
+                        <!-- Card 4 -->
+                        <div class="offer-card" data-tab-id="tab4" style="width: 357px; min-height: 420px; background: #FAF0D2; border-radius: 15px; padding: 12px; display: flex; flex-direction: column; gap: 12px; box-sizing: border-box; cursor: pointer;">
+                            <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; background: #FAF0D2; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <img src="Rectangle 25 (3).png" alt="Spiritual Counseling Session" width="357" height="200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content" style="width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 4px 0 8px 0; flex-grow: 1;">
+                                <div style="display: flex; flex-direction: row; gap: 5px;">
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.8337 7.50033C12.8337 10.7203 10.2203 13.3337 7.00033 13.3337C3.78033 13.3337 1.16699 10.7203 1.16699 7.50033C1.16699 4.28033 3.78033 1.66699 7.00033 1.66699C10.2203 1.66699 12.8337 4.28033 12.8337 7.50033Z" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.16418 9.35503L7.35585 8.27586C7.04085 8.08919 6.78418 7.64003 6.78418 7.27253V4.88086" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        45 Mins
+                                    </span>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.99969 8.33434C8.00485 8.33434 8.81969 7.51949 8.81969 6.51434C8.81969 5.50918 8.00485 4.69434 6.99969 4.69434C5.99453 4.69434 5.17969 5.50918 5.17969 6.51434C5.17969 7.51949 5.99453 8.33434 6.99969 8.33434Z" stroke="#0F0F0F"/>
+                                            <path d="M2.11133 5.45283C3.2605 0.40116 10.7447 0.406994 11.888 5.45866C12.5588 8.42199 10.7155 10.9303 9.09967 12.482C7.92717 13.6137 6.07217 13.6137 4.89383 12.482C3.28383 10.9303 1.4405 8.41616 2.11133 5.45283Z" stroke="#0F0F0F"/>
+                                        </svg>
+                                       Online & Group
+                                    </span>
+                                </div>
+                                <h3 style="margin: 0; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 20px; line-height: 1.2; color: #0F0F0F;">New Moon Healing & Meditation</h3>
+                                <p style="margin: 0; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.4; color: #948558;"> The New Moon marks a fresh start and the perfect time to plant seeds of intention. This group healing session helps you clear your energetic field, anchor new goals, and amplify your manifestation power. Harness the collective energy to manifest abundance and spiritual renewal.</p>
+                                <a href="services.html#tab4" style="display: inline-flex; align-items: center; margin-top: 12px; font-family: 'Quicksand', sans-serif; font-size: 14px; font-weight: 600; color: #0F0F0F; text-decoration: none;">
+                                    View Details
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                                        <path d="M6 4L10 8L6 12" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 5 -->
+                        <div class="offer-card" data-tab-id="tab5" style="width: 357px; min-height: 420px; background: #FAF0D2; border-radius: 15px; padding: 12px; display: flex; flex-direction: column; gap: 12px; box-sizing: border-box; cursor: pointer;">
+                            <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; background: #FAF0D2; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <img src="Rectangle 25 (4).png" alt="Meditation Guidance" width="357" height="200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content" style="width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 4px 0 8px 0; flex-grow: 1;">
+                                <div style="display: flex; flex-direction: row; gap: 5px;">
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.8337 7.50033C12.8337 10.7203 10.2203 13.3337 7.00033 13.3337C3.78033 13.3337 1.16699 10.7203 1.16699 7.50033C1.16699 4.28033 3.78033 1.66699 7.00033 1.66699C10.2203 1.66699 12.8337 4.28033 12.8337 7.50033Z" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.16418 9.35503L7.35585 8.27586C7.04085 8.08919 6.78418 7.64003 6.78418 7.27253V4.88086" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        20 Mins
+                                    </span>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.99969 8.33434C8.00485 8.33434 8.81969 7.51949 8.81969 6.51434C8.81969 5.50918 8.00485 4.69434 6.99969 4.69434C5.99453 4.69434 5.17969 5.50918 5.17969 6.51434C5.17969 7.51949 5.99453 8.33434 6.99969 8.33434Z" stroke="#0F0F0F"/>
+                                            <path d="M2.11133 5.45283C3.2605 0.40116 10.7447 0.406994 11.888 5.45866C12.5588 8.42199 10.7155 10.9303 9.09967 12.482C7.92717 13.6137 6.07217 13.6137 4.89383 12.482C3.28383 10.9303 1.4405 8.41616 2.11133 5.45283Z" stroke="#0F0F0F"/>
+                                        </svg>
+                                        Online
+                                    </span>
+                                </div>
+                                <h3 style="margin: 0; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 20px; line-height: 1.2; color: #0F0F0F;">Aura Scanning, Reading & Cleansing Session </h3>
+                                <p style="margin: 0; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.4; color: #948558;"> Curious about what your aura reveals? In this focused session, discover insights about your current life, emotions, and spiritual journey. You’ll receive an intuitive scan and reading of your aura and surrounding space to identify blockages, past-life imprints, or stress points, followed by a gentle cleansing to restore energetic balance and brightness.</p>
+                                <a href="services.html#tab5" style="display: inline-flex; align-items: center; margin-top: 12px; font-family: 'Quicksand', sans-serif; font-size: 14px; font-weight: 600; color: #0F0F0F; text-decoration: none;">
+                                    View Details
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                                        <path d="M6 4L10 8L6 12" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Card 6
+                        <div class="offer-card" style="width: 357px; background: #FAF0D2; border-radius: 15px; padding: 12px; display: flex; flex-direction: column; gap: 12px;">
+                            <div class="card-image" style="width: 100%; height: 200px; border-radius: 10px; background: #FAF0D2; overflow: hidden; display: flex; justify-content: center; align-items: center;">
+                                <img src="Rectangle 25 (5).png" alt="Healing Workshop" width="357" height="200" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="card-content" style="width: 100%; display: flex; flex-direction: column; gap: 12px; padding: 4px 0 8px 0; flex-grow: 1;">
+                                <div style="display: flex; flex-direction: row; gap: 5px;">
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.8337 7.50033C12.8337 10.7203 10.2203 13.3337 7.00033 13.3337C3.78033 13.3337 1.16699 10.7203 1.16699 7.50033C1.16699 4.28033 3.78033 1.66699 7.00033 1.66699C10.2203 1.66699 12.8337 4.28033 12.8337 7.50033Z" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9.16418 9.35503L7.35585 8.27586C7.04085 8.08919 6.78418 7.64003 6.78418 7.27253V4.88086" stroke="#0F0F0F" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        60 Mins
+                                    </span>
+                                    <span style="display: inline-flex; align-items: center; justify-content: center; height: 25px; background: #F2DA91; border-radius: 20px; padding: 5px 8px; text-align: center; font-family: 'Quicksand', sans-serif; font-size: 12px; line-height: 15px; gap: 4px;">
+                                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M6.99969 8.33434C8.00485 8.33434 8.81969 7.51949 8.81969 6.51434C8.81969 5.50918 8.00485 4.69434 6.99969 4.69434C5.99453 4.69434 5.17969 5.50918 5.17969 6.51434C5.17969 7.51949 5.99453 8.33434 6.99969 8.33434Z" stroke="#0F0F0F"/>
+                                            <path d="M2.11133 5.45283C3.2605 0.40116 10.7447 0.406994 11.888 5.45866C12.5588 8.42199 10.7155 10.9303 9.09967 12.482C7.92717 13.6137 6.07217 13.6137 4.89383 12.482C3.28383 10.9303 1.4405 8.41616 2.11133 5.45283Z" stroke="#0F0F0F"/>
+                                        </svg>
+                                        Online
+                                    </span>
+                                </div>
+                                <h3 style="margin: 0; font-family: 'Poltawski Nowy', serif; font-weight: 700; font-size: 20px; line-height: 1.2; color: #0F0F0F;">Bach Flower Remedy Consultation</h3>
+                                <p style="margin: 0; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 14px; line-height: 1.4; color: #948558;">Custom vibrational blends to ease emotional imbalances and restore clarity, for all ages.</p>
+                                <a href="services.html#tab6" style="display: inline-flex; align-items: center; margin-top: 12px; font-family: 'Quicksand', sans-serif; font-size: 14px; font-weight: 600; color: #0F0F0F; text-decoration: none;">
+                                    View Details
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: 8px;">
+                                        <path d="M6 4L10 8L6 12" stroke="#0F0F0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Activate Section -->
+            <section class="activate-section" style="background: #FAF0D2; width: 100%; position: relative;">
+                <div style="width: 1120px; height: 450px; margin: 0 auto; position: relative; border-radius: 10px; overflow: hidden; background-image: url('09884856aa3ca71ba710fb2de772a13454a8e5c8.jpg'); background-size: cover; background-position: center;">
+                    <!-- Text Container -->
+                    <div style="position: absolute; top: 100px; left: 60px; text-align: left; max-width: 500px;">
+                        <h2 style="color: #FFFFFF; font-family: 'Poltawski Nowy', serif; font-size: 48px; font-weight: 700; margin: 0 0 20px 0; text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);">
+                            Activate Your <br>Inner Self
+                        </h2>
+                    </div>
+                    
+                    <!-- Button Container -->
+                    <div style="position: absolute; bottom: 30px; right: 30px;">
+                        <a href="form.html" class="cta-btn" style="display: inline-flex; align-items: center; justify-content: center; width: 330px; height: 44px; border-radius: 5px; text-decoration: none; padding: 12px 18px 12px 18px; font-size: 14px; line-height: 1.2; background-color: #8A4F7D; color: #4F1C4C; text-align: center; opacity: 1; gap: 10px;">
+                            Begin My Personalized Journey
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Mobile Activate Section (Only shows on mobile) -->
+            <section class="mobile-activate" style="display: none; position: relative; width: 100%; max-width: 365px; margin: 0 auto; border-radius: 10px; overflow: hidden;">
+                <div style="position: relative; width: 100%; height: 704px; background: url('09884856aa3ca71ba710fb2de772a13454a8e5c8.jpg') center/cover no-repeat; border-radius: 10px;">
+                    <!-- Content container -->
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; gap: 36px;">
+                        <h2 style="font-family: 'Poltawski Nowy', serif; font-size: 40px; line-height: 52px; font-weight: 700; color: #FFFFFF; text-align: center; margin: 0; width: 100%;">
+                            Activate Your<br>Inner Self
+                        </h2>
+                        
+                        <a href="form.html" class="cta-btn" style="display: flex; justify-content: center; align-items: center; width: 271px; height: 42px; background: radial-gradient(100.3% 100.3% at 102.84% 0%, #F7EABF 0%, #F2DA91 100%); border-radius: 5px; text-decoration: none; font-family: 'Quicksand'; font-weight: 700; font-size: 14px; line-height: 18px; color: #4F1C4C;">
+                            Begin My Personalized Journey
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <!-- Testimonial Section -->
+    <section class="testimonial-section" style="padding: 80px 0; width: 100%; max-width: 100%; overflow: hidden;">
+        <div style="max-width: 1282px; width: 100%; margin: 0 auto; padding: 0 20px;">
+            <h1 style="text-align: center; margin-bottom: 40px; font-family: 'Poltawski Nowy', serif;">Real Transformations</h1>
+            <div class="testimonial-carousel">
+                <div class="btn-container">
+                    <button class="carousel-button prev" aria-label="Previous testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 18L9 12L15 6" stroke="#7C4681" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-button next" aria-label="Next testimonial">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="#7C4681" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="testimonial-container">
+                    <div class="testimonial">
+                        <!-- <img src="1.png" alt="Person 1"> -->
+                        <div class="testimonial-text">
+                            <p>"I've felt a lot of relief from tension throughout the sessions Reckhha Mam. I feel "lighter" and more in-tune with myself after a session, and I am more prepared to deal with life's challenges.I also feel motivated and reaffirmed that I'm spiritually exactly where I should be.Grateful to you mam🙏🏼😊."
+                            </p>
+                            <span>Kusum Sharma</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <!-- <img src="2.png" alt="Person 2"> -->
+                        <div class="testimonial-text">
+                            <p>"I have been member of Soul family for six months now. I have taken personal and group healings from Mam. Also attended workshop on Hanuman Raksha Kavach and Candle Manifestation. Candle manifestation workshop has really worked like magic as 3 out of my 4 wishes got manifested effortlessly including Marriage. 😃"</p>
+                            <span>Harshada</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <!-- <img src="3.png" alt="Person 3"> -->
+                        <div class="testimonial-text">
+                            <p>"Hiee this is my testimonial for mam initially I saw her on you tube n took a lot of sessions on you tube and it really helped me a lot n then I joined this wats app community and personally took a healing session with her it was soo powerful n amazing 👏🎉 I got instant relief in many aspects of my life and I m continuing with her sessions 🙏❤️ thank you soo much mam gratitude"</p>
+                            <span>Priyanka</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Final CTA -->
+    <div class="final-cta-wrapper">
+        <section class="final-cta-section" id="book">
+            <div class="final-cta-bg">
+                <img src="group 3.svg" alt="Stars Background" class="cta-bg-stars">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="Ellipse17.svg">
+                    <img src="Ellipse 15.svg" alt="Moon Arc" class="cta-bg-arc">
+                </picture>
+
+                <div class="final-cta-content">
+                    <h2>Only 10 Webinar seats Open for this Month</h2>
+                    <div class="final-cta-price" style="margin-bottom: 30px;">Just At <span>₹99</span></div>
+                    <a href="form.html" class="cta-btn"
+                        style="display: inline-flex; align-items: center; justify-content: center; width: 180px; height: 40px; border-radius: 5px; text-decoration: none; padding: 8px 16px; font-size: 14px; line-height: 1.2; margin-top: 15px;">Reserve a Spot</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="logowhite.png" alt="Heal Holistic Logo" class="footer-logo-img" width="150" height="40" loading="lazy">
+                </a>
+            </div>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div class="footer-contact-item">
+                        <img src="phone.svg" alt="Phone" class="footer-icon">
+                        <span>+91 99115 43666</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <img src="mail.svg" alt="Mail" class="footer-icon">
+                        <span>connect@liveloveheal.in</span>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Social</h3>
+                    <a href="https://www.instagram.com/live.love.heal_/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="footer-contact-item" 
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit; gap: 8px;">
+                        <img src="instagram.svg" alt="Instagram" class="footer-icon">
+                        <span>@live.love.heal_</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCXP6nv-cUaW3L2nQLPuY1Ng" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="footer-contact-item" 
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit; gap: 8px;">
+                        <img src="utube.svg" alt="YouTube" class="footer-icon">
+                        <span>@ReckhhaMalhotra</span>
+                    </a>
+                    <a href="https://www.youtube.com/@rekhamalhotraenglish" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="footer-contact-item" 
+                    style="display: flex; align-items: center; text-decoration: none; color: inherit; gap: 8px;">
+                        <img src="utube.svg" alt="YouTube" class="footer-icon">
+                        <span>@rekhamalhotraenglish</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-svg-line">
+        <div class="footer-bottom-text">All Rights Reserved | Heal Holistic 2025</div>
+    </footer>
+    
+    <style>
+        /* Mobile alignment for offer section heading */
+        @media (max-width: 767px) {
+            .offer-section h2 {
+                margin-left: 12px !important;
+                padding-left: 0 !important;
+                font-size: 24px !important;
+            }
+            .offer-section > div > div:first-child > div {
+                padding: 0 12px !important;
+            }
+            .offer-section > div > div:first-child > div > div:last-child {
+                left: 24px !important;
+                right: 12px !important;
+            }
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: url("rectangle 17.svg") center center/cover no-repeat;
+            padding: 60px 40px 0;
+            color: #e4aef2;
+            font-family: "Quicksand", sans-serif;
+            min-height: 330px;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .footer-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1120px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo {
+            flex: 0 0 auto;
+            margin-top: -20px;
+        }
+
+        .footer-logo-img {
+            max-width: 160px;
+            height: auto;
+        }
+
+        .footer-content {
+            display: flex;
+            gap: 80px;
+            justify-content: flex-end;
+        }
+
+        .footer-col {
+            width: auto;
+            min-width: 180px;
+            text-align: left;
+        }
+
+        .footer-col h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 24px;
+            font-family: "Georgia", serif;
+            text-align: left;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 16px;
+            color: #e4aef2;
+            margin-bottom: 18px;
+            font-weight: 500;
+        }
+
+        .footer-icon {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            filter: none;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .footer-svg-line {
+            display: block;
+            width: calc(100% - 80px);
+            max-width: 1120px;
+            height: 1px;
+            border: none;
+            background: #e4aef2;
+            opacity: 0.3;
+            margin: 60px auto 20px;
+        }
+
+        .footer-bottom-text {
+            text-align: left;
+            width: calc(100% - 80px);
+            max-width: 1120px;
+            margin: 15px auto 40px;
+            color: #e4aef2;
+            font-family: "Quicksand", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 500;
+            box-sizing: border-box;
+        }
+
+        /* Spiritual Section Styles */
+        .spiritual-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            min-height: 700px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .spiritual-section .container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+        
+        .spiritual-section .section-header {
+            position: relative;
+            width: 100%;
+            margin-bottom: 40px !important;
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 767px) {
+            .spiritual-section {
+                height: auto !important;
+                min-height: 700px;
+                padding: 40px 0;
+                display: flex;
+                align-items: center;
+            }
+              /* Prevent phone numbers from being styled as links */
+        .footer-contact-item span {
+            color: #e4aef2 !important;
+            text-decoration: none !important;
+        }
+        
+        /* Target iOS specifically */
+        .footer-contact-item a[href^="tel:"] {
+            color: #e4aef2 !important;
+            text-decoration: none !important;
+        }
+            .spiritual-section .container {
+                padding: 0 20px !important;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            
+            .spiritual-section .container > div {
+                padding-top: 36px !important;
+            }
+            
+            .spiritual-section .section-header {
+                margin-bottom: 30px !important;
+                padding: 0 10px;
+            }
+            
+            .spiritual-section h1 {
+                font-size: 20px !important;
+                line-height: 1.3 !important;
+                padding: 0 !important;
+                margin-bottom: 30px !important;
+            }
+            
+            .spiritual-section .section-subtitle {
+                font-size: 16px !important;
+                margin-bottom: 10px !important;
+            }
+            
+            .icons-row {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px !important;
+            }
+            
+            .icon-container {
+                width: 100% !important;
+                max-width: 280px !important;
+                height: 60px !important;
+                margin: 0 auto;
+            }
+            
+            .icon-container img {
+                max-height: 100% !important;
+                width: auto !important;
+                display: block;
+                margin: 0 auto;
+            }
+            
+        }
+        
+        @media (max-width: 900px) {
+            footer {
+                padding: 40px 20px 0;
+                min-height: auto;
+            }
+            .testimonial:not(:last-child) {
+                margin-right: -2% !important;
+            }
+            .footer-main {
+                flex-direction: column;
+                align-items: flex-start;
+                text-align: left;
+                gap: 30px;
+                padding-bottom: 30px;
+                max-width: 100%;
+                width: 100%;
+            }
+
+            .footer-logo {
+                margin-top: 0;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: left;
+            }
+
+            .footer-content {
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 30px;
+            }
+
+            .footer-col {
+                text-align: left;
+                width: 100%;
+            }
+
+            .footer-col h3 {
+                text-align: left;
+                font-size: 1.5rem;
+                margin-bottom: 15px;
+            }
+
+            .footer-contact-item {
+                justify-content: flex-start;
+            }
+
+            .footer-svg-line {
+                margin: 30px 0;
+                width: 100%;
+            }
+
+            .footer-bottom-text {
+                text-align: left;
+                margin: 15px 0 30px;
+                width: 100%;
+                padding: 0;
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Make offer cards clickable
+            document.querySelectorAll('.offer-card').forEach(card => {
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', function(e) {
+                    // Don't navigate if clicking on a link inside the card
+                    if (e.target.tagName === 'A' || e.target.closest('a')) {
+                        return;
+                    }
+                    const tabId = this.getAttribute('data-tab-id');
+                    if (tabId) {
+                        window.location.href = `services.html#${tabId}`;
+                    }
+                });
+            });
+
+            const container = document.querySelector('.testimonial-container');
+            const testimonials = document.querySelectorAll('.testimonial');
+            const prevButton = document.querySelector('.carousel-button.prev');
+            const nextButton = document.querySelector('.carousel-button.next');
+            
+            let currentIndex = 0;
+            let isAnimating = false;
+            
+            // Calculate the width of one testimonial including margin
+            function updateTestimonialWidth() {
+                return testimonials[0].offsetWidth + 32; // width + gap (16px margin on each side)
+            }
+            
+            function scrollToIndex(index) {
+                if (isAnimating) return;
+                
+                if (index < 0) index = 0;
+                if (index > testimonials.length - 1) index = testimonials.length - 1;
+                
+                currentIndex = index;
+                const scrollPosition = currentIndex * updateTestimonialWidth();
+                
+                isAnimating = true;
+                container.scrollTo({
+                    left: scrollPosition,
+                    behavior: 'smooth'
+                });
+                
+                // Reset animation flag after scroll completes
+                setTimeout(() => {
+                    isAnimating = false;
+                }, 500);
+            }
+            
+            function nextTestimonial() {
+                if (currentIndex < testimonials.length - 1) {
+                    scrollToIndex(currentIndex + 1);
+                } else {
+                    scrollToIndex(0); // Loop back to first testimonial
+                }
+            }
+            
+            function prevTestimonial() {
+                if (currentIndex > 0) {
+                    scrollToIndex(currentIndex - 1);
+                } else {
+                    scrollToIndex(testimonials.length - 1); // Loop to last testimonial
+                }
+            }
+            
+            // Event listeners
+            nextButton.addEventListener('click', nextTestimonial);
+            prevButton.addEventListener('click', prevTestimonial);
+            
+            // Touch events for mobile swipe
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            container.addEventListener('touchstart', function(e) {
+                touchStartX = e.touches[0].clientX;
+            }, false);
+            
+            container.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].clientX;
+                handleSwipe();
+            }, false);
+            
+            function handleSwipe() {
+                const swipeThreshold = 50; // Minimum distance to trigger swipe
+                
+                if (touchEndX < touchStartX - swipeThreshold) {
+                    // Swipe left - go to next
+                    nextTestimonial();
+                } else if (touchEndX > touchStartX + swipeThreshold) {
+                    // Swipe right - go to previous
+                    prevTestimonial();
+                }
+            }
+            
+            // Keyboard navigation
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'ArrowRight') {
+                    nextTestimonial();
+                } else if (e.key === 'ArrowLeft') {
+                    prevTestimonial();
+                }
+            });
+            
+        }); // Close the document ready function
+    </script>
+    
+    <!-- Structured Data for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Heal Holistic - Rekha Malhotra",
+      "image": "https://healholistic.in/rekha.png",
+      "@id": "https://healholistic.in",
+      "url": "https://healholistic.in",
+      "telephone": "+91 99115 43666",
+      "priceRange": "$$",
+      "description": "Transformative spiritual healing services by Rekha Malhotra. Specializing in energy healing, chakra balancing, and spiritual guidance.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 19.0760,
+        "longitude": 72.8777
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/live.love.heal_/",
+        "https://www.facebook.com/yourpage",
+        "https://www.linkedin.com/in/yourprofile"
+      ]
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YX7EHPL46"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8YX7EHPL46');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#2A0C4E">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favpink.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="favicon/favwhite.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <!-- iOS specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Standard for all devices -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Rekha Malhotra - Spiritual Healing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Mobile Menu Styles */
+        @media (max-width: 1023px) {
+            /* Hide desktop nav on mobile */
+            .nav-container {
+                display: none !important;
+            }
+            
+            /* Mobile Menu Button */
+            .mobile-hamburger {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1000;
+                cursor: pointer;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                padding: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            
+            .mobile-hamburger img {
+                width: 20px;
+                height: 20px;
+                opacity: 1;
+            }
+            
+            /* Mobile Menu Overlay */
+            .mobile-menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #4F1C4C;
+                z-index: 999;
+                display: none;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 80px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+            
+            .mobile-menu-overlay.active {
+                display: flex;
+                animation: fadeIn 0.3s ease;
+            }
+            
+            .mobile-menu-close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+                z-index: 1001;
+            }
+            
+            .mobile-nav-links {
+                list-style: none;
+                padding: 0 20px;
+                margin: 0;
+                width: 100%;
+                max-width: 300px;
+                box-sizing: border-box;
+            }
+            
+            .mobile-nav-links li {
+                margin: 25px 0;
+            }
+            
+            .mobile-nav-links a {
+                color: white;
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 500;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0%;
+                transition: color 0.3s ease;
+                display: block;
+                opacity: 1;
+            }
+            
+            .mobile-nav-links a:hover {
+                color: #e4aef2;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        }
+        
+        /* Desktop styles - hide mobile elements */
+        @media (min-width: 1024px) {
+            .mobile-hamburger,
+            .mobile-menu-overlay {
+                display: none !important;
+            }
+        }
+    </style>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="musics.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</head>
+
+<body class="index-page home-page">
+    <div class="container">
+        <div class="main">
+            <!-- Mobile Hamburger Menu -->
+            <div class="mobile-hamburger" id="mobileHamburger">
+                <img src="ham.svg" alt="Menu">
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <ul class="mobile-nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Reiki.html">Quantum Reiki</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="form.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="logowhite.png" alt="Logo" style="height: 25px;">
+                        </a>
+                    </div>
+                    <button class="hamburger-svg" id="hamburger" aria-label="Toggle navigation">
+                        <img src="ham.svg" alt="Menu" class="hamburger-icon">
+                    </button>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="home.html" style="color: #fff;">Home</a></li>
+                        <li><a href="services.html" style="color: #fff;">Services</a></li>
+                        <li><a href="Reiki.html" style="color: #fff;">Quantum Reiki</a></li>
+                        <li><a href="about.html" style="color: #fff;">About</a></li>
+                        <li><a href="blog.html" style="color: #fff;">Blogs</a></li>
+                        <li><a href="form.html" style="color: #fff;">Contact Us</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <section class="hero" id="home" style="background-image: none; height: 299px;">
+                <div class="star star-1"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
+                <div class="star star-5"></div>
+                <div class="star star-6"></div>
+                <div class="star star-7"></div>
+                <div class="star star-8"></div>
+                <div class="star star-9"></div>
+                
+                <div class="hero-content" style="display: flex;
+    flex-wrap: wrap;
+    justify-content: center;">
+                    <h1 style="font-family: Poltawski Nowy;
+font-weight: 600;
+font-size: 64px;
+line-height: 74px;
+text-align: center;">The light you seek outside is already within you</h1>
+                    <p style="font-family: Quicksand;
+font-weight: 400;
+font-size: 24px;
+text-align: center;
+color: #fff;
+width: 687px;
+height: 60px;">Step into a space of deep healing, spiritual remembrance, brand soul-led transformation</p>
+                </div>
+                <!-- Glow overlay - fixed position -->
+                <img src="g2.svg" alt="Overlay" class="g2-overlay">
+                
+                <div class="moon-arc">
+                    <div class="moon-container">
+                        <img src="Group 1000009144.svg" alt="Moon Arc" class="moon-arc-image">
+                    </div>
+                    <div class="arc-content">
+                        <a href="home.html" class="cta-btn" target="_self" style="width: 259px; height: 47px; border-radius: 5px; border: 1px solid; padding: 12px 18px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; gap: 10px; white-space: nowrap;">
+    <span style="font-family: 'Poltawski Nowy', serif; font-weight: 600; font-size: 18px; line-height: 100%; letter-spacing: 0%; color: #30112E; width: 223px; height: 23px; display: flex; align-items: center; justify-content: center;">Start Your Healing Journey</span>
+</a>
+                        <div class="signature">
+                            <div class="curated-by" style="font-family: Quicksand;
+font-weight: 700;
+font-size: 16px;
+text-transform: uppercase;">CURATED BY REKHA MALHOTRA</div>
+                            <div class="title" style="font-family: Quicksand;
+font-weight: 400;
+font-size: 16px;
+text-transform: uppercase;">ENERGY ALCHEMIST. GLOBAL HEALER. SOUL GUIDE.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]:not(.cta-btn)').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId !== '#') {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+
+            // Create transition overlay
+            const transitionOverlay = document.createElement('div');
+            transitionOverlay.className = 'page-transition';
+            document.body.appendChild(transitionOverlay);
+
+            // Handle CTA button click
+            const ctaBtn = document.querySelector('.cta-btn');
+            if (ctaBtn) {
+                ctaBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    
+                    // Disable the button to prevent multiple clicks
+                    this.style.pointerEvents = 'none';
+                    
+                    // Add transition classes
+                    document.body.classList.add('transition-active', 'animation-active');
+                    
+                    // Let CSS handle the nav background during animation
+                    const nav = document.querySelector('nav');
+                    if (nav) {
+                        // Remove any inline styles that might override our CSS
+                        nav.removeAttribute('style');
+                    }
+                    
+                    // Force reflow to ensure the class is applied
+                    void document.body.offsetHeight;
+                    
+                    // Start the animations
+                    document.body.classList.add('transition-start');
+                    
+                    // Show the purple overlay after the arc starts moving
+                    setTimeout(() => {
+                        transitionOverlay.classList.add('active');
+                    }, 300);
+                    
+                    // Navigate after animation completes
+                    setTimeout(() => {
+                        window.location.href = href;
+                    }, 2200); // Increased to ensure full animation completes
+                });
+            }
+            
+            // Handle page load to ensure transitions work
+            window.addEventListener('load', function() {
+                // Force reflow to ensure transitions work on page load
+                void document.body.offsetHeight;
+            });
+            
+            // Position moon arc on load and resize
+            function positionMoonArc() {
+                const moonArc = document.querySelector('.moon-arc');
+                if (moonArc) {
+                    // Remove any inline styles first
+                    moonArc.style = '';
+                    
+                    // Get viewport width
+                    const viewportWidth = window.innerWidth;
+                    
+                    if (viewportWidth <= 767) {
+                        // Mobile styles
+                        moonArc.style.position = 'relative';
+                        moonArc.style.width = '100%';
+                        moonArc.style.maxWidth = '500px'; // Increased max width for better button fit
+                        moonArc.style.margin = '0 auto';
+                        moonArc.style.bottom = '0';
+                        moonArc.style.overflow = 'visible';
+                        moonArc.style.paddingTop = '20px'; // Add some top padding
+                        
+                        // Adjust the moon container
+                        const moonContainer = moonArc.querySelector('.moon-container');
+                        if (moonContainer) {
+                            moonContainer.style.width = '100%';
+                            moonContainer.style.maxWidth = '100%';
+                            moonContainer.style.margin = '0 auto';
+                            moonContainer.style.position = 'relative';
+                            moonContainer.style.overflow = 'visible';
+                        }
+                        
+                        // Adjust the moon arc image
+                        const moonImage = moonArc.querySelector('.moon-arc-image');
+                        if (moonImage) {
+                            moonImage.style.width = '100%';
+                            moonImage.style.height = '220px'; // Reduced height
+                            moonImage.style.objectFit = 'contain';
+                            moonImage.style.display = 'block';
+                        }
+                        
+                        // Adjust the glow overlay - Enhanced for visibility
+                        const glowOverlay = document.querySelector('.g2-overlay');
+                        if (glowOverlay) {
+                            // Preserve the glow's height and position
+                            glowOverlay.style.position = 'fixed';
+                            glowOverlay.style.bottom = '0';
+                            glowOverlay.style.left = '50%';
+                            glowOverlay.style.transform = 'translateX(-50%)';
+                            glowOverlay.style.width = '100%';
+                            glowOverlay.style.height = '5px';
+                            glowOverlay.style.zIndex = '999';
+                            glowOverlay.style.pointerEvents = 'none';
+                            glowOverlay.style.objectFit = 'contain';
+                            glowOverlay.style.objectPosition = 'bottom center';
+                            
+                            // Only apply mobile-specific styles if on mobile
+                            if (viewportWidth <= 767) {
+                                // Let CSS handle the styling, just ensure it's visible
+                                glowOverlay.style.display = 'block';
+                                glowOverlay.style.visibility = 'visible';
+                                glowOverlay.style.pointerEvents = 'none';
+                            }
+                        }
+                        
+                        // Center the arc content
+                        const arcContent = moonArc.querySelector('.arc-content');
+                        if (arcContent) {
+                            arcContent.style.position = 'absolute';
+                            arcContent.style.bottom = '40px'; // Moved up to sit inside arc
+                            arcContent.style.left = '50%';
+                            arcContent.style.transform = 'translateX(-50%)';
+                            arcContent.style.width = '100%';
+                            arcContent.style.textAlign = 'center';
+                            arcContent.style.padding = '0 30px';
+                            arcContent.style.boxSizing = 'border-box';
+                            
+                            // Style the button
+                            const ctaBtn = arcContent.querySelector('.cta-btn');
+                            if (ctaBtn) {
+                                ctaBtn.style.padding = '12px 30px';
+                                ctaBtn.style.fontSize = '16px';
+                                ctaBtn.style.marginBottom = '10px';
+                            }
+                        }
+                    } else {
+                        // Desktop styles
+                        const arcHeight = moonArc.offsetHeight;
+                        moonArc.style.bottom = `-${arcHeight * 0.25}px`;
+                    }
+                }
+            }
+            
+            // Mobile hamburger menu functionality
+            const mobileHamburger = document.getElementById('mobileHamburger');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const mobileMenuClose = document.getElementById('mobileMenuClose');
+            
+            // Toggle mobile menu
+            if (mobileHamburger && mobileMenuOverlay) {
+                const hamburgerIcon = mobileHamburger.querySelector('img');
+                const closeIcon = document.createElement('img');
+                closeIcon.src = 'close.svg';
+                closeIcon.alt = 'Close';
+                closeIcon.style.display = 'none';
+                closeIcon.style.width = '36px';
+                closeIcon.style.height = '36px';
+                mobileHamburger.appendChild(closeIcon);
+                
+                function toggleMenu() {
+                    const isMenuOpen = mobileMenuOverlay.classList.toggle('active');
+                    if (isMenuOpen) {
+                        hamburgerIcon.style.display = 'none';
+                        closeIcon.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        hamburgerIcon.style.display = 'block';
+                        closeIcon.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                }
+                
+                mobileHamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    toggleMenu();
+                });
+                
+                // Close menu when clicking on a link
+                const mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileMenuOverlay.classList.remove('active');
+                        hamburgerIcon.style.display = 'block';
+                        closeIcon.style.display = 'none';
+                        document.body.style.overflow = '';
+                    });
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (mobileMenuOverlay.classList.contains('active') && 
+                        !mobileMenuOverlay.contains(e.target) && 
+                        e.target !== mobileHamburger && 
+                        !mobileHamburger.contains(e.target)) {
+                        toggleMenu();
+                    }
+                });
+            }
+            
+            if (mobileHamburger && navLinks) {
+                mobileHamburger.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    navLinks.classList.toggle('active');
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!navLinks.contains(e.target) && !mobileHamburger.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+                
+                // Close menu when clicking on a link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
+            
+            if (hamburger && navLinks) {
+                console.log('Hamburger and navLinks found');
+                hamburger.addEventListener('click', (e) => {
+                    e.stopPropagation(); // Prevent event from bubbling up
+                    console.log('Hamburger clicked');
+                    navLinks.classList.toggle('active');
+                    hamburger.classList.toggle('active');
+                    document.body.classList.toggle('no-scroll');
+                    console.log('Active classes toggled');
+                    console.log('navLinks classList:', navLinks.classList);
+                });
+                
+                // Close menu when clicking on a nav link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        document.body.classList.remove('no-scroll');
+                    });
+                });
+            }
+
+            // Close menu when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.nav-container') && navLinks && navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                    if (hamburger) hamburger.classList.remove('active');
+                    document.body.classList.remove('no-scroll');
+                }
+            });
+
+            // Debounce the resize event
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(positionMoonArc, 250);
+            });
+            
+            // Initial positioning
+            document.addEventListener('DOMContentLoaded', positionMoonArc);
+            window.addEventListener('load', positionMoonArc);
+        });
+        </script>
+        
+        <!-- External Scripts -->
+        <script src="form.js"></script>
+        <script src="mobile-fix.js"></script>
+        
+        <!-- Music functionality -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('bgMusic');
+            const muteButton = document.getElementById('muteButton');
+            const icon = muteButton.querySelector('span');
+            
+            // Check if music was playing before
+            const isMuted = localStorage.getItem('musicMuted') === 'true';
+            
+            // Set initial state
+            if (isMuted) {
+                audio.muted = true;
+                icon.textContent = '🔇';
+                muteButton.classList.add('muted');
+            } else {
+                // Try to play audio (will be muted until user interacts)
+                audio.volume = 0.5;
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        // Autoplay was prevented, wait for user interaction
+                        document.body.addEventListener('click', function enableAudio() {
+                            audio.play();
+                            document.body.removeEventListener('click', enableAudio);
+                        }, { once: true });
+                    });
+                }
+            }
+            
+            // Toggle mute on button click
+            muteButton.addEventListener('click', function() {
+                audio.muted = !audio.muted;
+                if (audio.muted) {
+                    icon.textContent = '🔇';
+                    muteButton.classList.add('muted');
+                    localStorage.setItem('musicMuted', 'true');
+                } else {
+                    icon.textContent = '🔊';
+                    muteButton.classList.remove('muted');
+                    localStorage.setItem('musicMuted', 'false');
+                    // Try to play when unmuting
+                    if (audio.paused) {
+                        audio.play();
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- Music Player -->
+    <div class="music-player">
+        <button id="muteButton" aria-label="Toggle music">
+            <span>🔊</span>
+        </button>
+    </div>
+    
+    <!-- Background Music (hidden) -->
+    <audio id="bgMusic" loop>
+        <source src="musics.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>

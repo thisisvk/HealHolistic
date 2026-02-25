@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /admin/
+Disallow: /includes/
+Disallow: /cgi-bin/
+
+Sitemap: https://healholistic.in/sitemap.xml

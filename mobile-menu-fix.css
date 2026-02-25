@@ -1,0 +1,28 @@
+/* Mobile Menu Fix for about.html */
+@media (max-width: 1023px) {
+    /* Left-align the mobile menu overlay content */
+    .mobile-menu-overlay {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+        padding: 20px !important;
+        text-align: left !important;
+    }
+    
+    /* Style the navigation links */
+    .mobile-nav-links {
+        width: 100% !important;
+        margin: 18px !important;
+        text-align: left !important;
+    }
+    
+    /* Adjust list items */
+    .mobile-nav-links li {
+        width: 100% !important;
+    }
+    
+    /* Ensure links take full width */
+    .mobile-nav-links a {
+        display: block !important;
+        width: 100% !important;
+    }
+}

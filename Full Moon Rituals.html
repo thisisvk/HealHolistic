@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YX7EHPL46"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-8YX7EHPL46');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#2A0C4E">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/favpink.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="favicon/favwhite.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <!-- iOS specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Standard for all devices -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Full Moon Rituals - Healing, Release & Manifestation - Heal Holistic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        /* Mobile Menu Styles */
+        @media (max-width: 1023px) {
+            /* Hide desktop nav on mobile */
+            .nav-container {
+                display: none !important;
+            }
+
+            .mobile-hamburger {
+                display: flex !important;
+            }
+            
+            .mobile-hamburger {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 1001;
+                cursor: pointer;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 5px;
+                padding: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+            
+            .mobile-hamburger img {
+                width: 20px;
+                height: 20px;
+                opacity: 1;
+            }
+            
+            .mobile-menu-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #4F1C4C;
+                z-index: 999;
+                display: none;
+                flex-direction: column;
+                justify-content: flex-start;
+                padding-top: 80px;
+                box-sizing: border-box;
+                overflow-y: auto;
+            }
+            
+            .mobile-menu-overlay.active {
+                display: flex;
+                animation: fadeIn 0.3s ease;
+            }
+            
+            .mobile-menu-close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+                z-index: 1001;
+            }
+            
+            .mobile-nav-links {
+                list-style: none;
+                padding: 0 20px;
+                margin: 0;
+                width: 100%;
+            }
+            
+            .mobile-nav-links li {
+                margin-bottom: 20px;
+            }
+            
+            .mobile-nav-links a {
+                color: white;
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                transition: color 0.3s ease;
+                display: block;
+                padding: 10px 0;
+            }
+            
+            .mobile-nav-links a:hover {
+                color: #E0D1DF;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+            }
+        }
+        /* Desktop styles */
+        @media (min-width: 1024px) {
+            .mobile-hamburger, .mobile-menu-overlay {
+                display: none;
+            }
+            .nav-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background:  #F4DEFA;
+                backdrop-filter: blur(10px);
+                z-index: 1000;
+                padding: 15px 0;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            .nav-wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+            }
+            .nav-links {
+                display: flex;
+                gap: 30px;
+            }
+            .nav-links a {
+                color: #2A0C4E;
+                text-decoration: none;
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 600;
+                font-size: 1rem;
+                transition: color 0.3s ease;
+                position: relative;
+            }
+            .nav-links a:hover {
+                color: #6D436A;
+            }
+            .nav-links a::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                background: #6D436A;
+                bottom: -5px;
+                left: 0;
+                transition: width 0.3s ease;
+            }
+            .nav-links a:hover::after {
+                width: 100%;
+            }
+        }
+        /* Blog Header Styles */
+        .blog-header {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        .blog-header h1 {
+            font-family: 'Poltawski Nowy', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #2A0C4E;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        
+        .blog-meta {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .meta-tags {
+            display: flex;
+            gap: 10px;
+        }
+         .meta-item-authour {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #4F1C4C;
+            font-size: 0.95rem;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .meta-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #4F1C4C;
+            font-size: 0.95rem;
+        }
+        
+        .meta-item svg {
+            flex-shrink: 0;
+        }
+        
+        .pill {
+            display: inline-block;
+            background-color: #F4DEFA;
+            color: #4F1C4C;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Blog content styles */
+         .pill {
+        display: inline-block;
+        background: rgba(79, 28, 76, 0.5);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 13.5px;
+        font-size: 14px;
+    }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #F4DEFA;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            padding-top: 80px; /* Space for fixed header */
+        }
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .blog-container {
+                padding: 0 1rem;
+            }
+        }
+        .blog-banner {
+            width: 100vw;
+            max-width: 100vw;
+            margin: 30px calc(50% - 50vw);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-banner img {
+            width: 100%;
+            height: 800px;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .blog-post h1 {
+            font-family: 'Poltawski Nowy', serif;
+            color: #4F1C4C;
+            font-size: 2.5rem;
+        }
+        .blog-post h2 {
+            font-family: 'Poltawski Nowy', serif;
+            color: #6D436A;
+            margin-top: 40px;
+            font-size: 1.8rem;
+        }
+        .blog-post h3 {
+            font-family: 'Poltawski Nowy', serif;
+            color: #6D436A;
+            margin-top: 25px;
+            font-size: 1.4rem;
+        }
+        .blog-post p {
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+        .blog-post ul {
+            margin: 20px 0;
+            padding-left: 25px;
+        }
+        .blog-post li {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .blog-banner {
+                width: 100%;
+                max-width: 100%;
+                margin: 30px 0;
+                border-radius: 0;
+            }
+            
+            .blog-banner img {
+                border-radius: 0;
+                height: 300px; /* Slightly smaller height on mobile */
+            }
+            .blog-header h1 {
+                font-size: 2rem;
+            }
+            
+            .blog-meta {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .meta-details {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .blog-post h1 {
+                font-size: 2rem;
+            }
+            .blog-post h2 {
+                font-size: 1.5rem;
+            }
+            .blog-post h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="rekhi-page">
+    <div class="container">
+        <div class="main">
+            <!-- Mobile Hamburger Menu -->
+            <div class="mobile-hamburger" id="mobileHamburger">
+                <img src="ham.svg" alt="Menu">
+            </div>
+            
+            <!-- Mobile Menu Overlay -->
+            <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+                <ul class="mobile-nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="Reiki.html">Quantum Reiki</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="form.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="nav-container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="logo-link">
+                        <img src="logopink.png" alt="Heal Holistic Logo" class="logo"style="height: 25px;">
+                    </a>
+                    <div class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="Reiki.html">Quantum Reiki</a>
+                        <a href="about.html">About</a>
+                        <a href="blog.html">Blogs</a>
+                        <a href="form.html">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Blog Content -->
+             <div class="blog-container">
+                <article class="blog-post">
+                    <header class="blog-header">
+                        <h1>Full Moon Rituals for Healing, Release & Manifestation</h1>
+                        <div class="blog-meta">
+                            <div class="meta-details">
+                                  <div class="meta-tags">
+                                <span class="pill">Energy Healing</span>
+                            </div>
+                           
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.25 2.5H14.375V1.875C14.375 1.70924 14.3092 1.55027 14.1919 1.43306C14.0747 1.31585 13.9158 1.25 13.75 1.25C13.5842 1.25 13.4253 1.31585 13.3081 1.43306C13.1908 1.55027 13.125 1.70924 13.125 1.875V2.5H6.875V1.875C6.875 1.70924 6.80915 1.55027 6.69194 1.43306C6.57473 1.31585 6.41576 1.25 6.25 1.25C6.08424 1.25 5.92527 1.31585 5.80806 1.43306C5.69085 1.55027 5.625 1.70924 5.625 1.875V2.5H3.75C3.41848 2.5 3.10054 2.6317 2.86612 2.86612C2.6317 3.10054 2.5 3.41848 2.5 3.75V16.25C2.5 16.5815 2.6317 16.8995 2.86612 17.1339C3.10054 17.3683 3.41848 17.5 3.75 17.5H16.25C16.5815 17.5 16.8995 17.3683 17.1339 17.1339C17.3683 16.8995 17.5 16.5815 17.5 16.25V3.75C17.5 3.41848 17.3683 3.10054 17.1339 2.86612C16.8995 2.6317 16.5815 2.5 16.25 2.5ZM5.625 3.75V4.375C5.625 4.54076 5.69085 4.69973 5.80806 4.81694C5.92527 4.93415 6.08424 5 6.25 5C6.41576 5 6.57473 4.93415 6.69194 4.81694C6.80915 4.69973 6.875 4.54076 6.875 4.375V3.75H13.125V4.375C13.125 4.54076 13.1908 4.69973 13.3081 4.81694C13.4253 4.93415 13.5842 5 13.75 5C13.9158 5 14.0747 4.93415 14.1919 4.81694C14.3092 4.69973 14.375 4.54076 14.375 4.375V3.75H16.25V6.25H3.75V3.75H5.625ZM16.25 16.25H3.75V7.5H16.25V16.25Z" fill="#4F1C4C"/>
+                                    </svg>
+                                    <span>October 20, 2025</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 1.875C8.39303 1.875 6.82214 2.35152 5.486 3.24431C4.14985 4.1371 3.10844 5.40605 2.49348 6.8907C1.87852 8.37535 1.71762 10.009 2.03112 11.5851C2.34463 13.1612 3.11846 14.6089 4.25476 15.7452C5.39106 16.8815 6.8388 17.6554 8.4149 17.9689C9.99099 18.2824 11.6247 18.1215 13.1093 17.5065C14.594 16.8916 15.8629 15.8502 16.7557 14.514C17.6485 13.1779 18.125 11.607 18.125 10C18.1227 7.84581 17.266 5.78051 15.7427 4.25727C14.2195 2.73403 12.1542 1.87727 10 1.875ZM10 16.875C8.64026 16.875 7.31105 16.4718 6.18046 15.7164C5.04987 14.9609 4.16868 13.8872 3.64833 12.6309C3.12798 11.3747 2.99183 9.99237 3.2571 8.65875C3.52238 7.32513 4.17716 6.10013 5.13864 5.13864C6.10013 4.17716 7.32514 3.52237 8.65876 3.2571C9.99238 2.99183 11.3747 3.12798 12.631 3.64833C13.8872 4.16868 14.9609 5.04987 15.7164 6.18045C16.4718 7.31104 16.875 8.64025 16.875 10C16.8729 11.8227 16.1479 13.5702 14.8591 14.8591C13.5702 16.1479 11.8227 16.8729 10 16.875ZM15 10C15 10.1658 14.9342 10.3247 14.8169 10.4419C14.6997 10.5592 14.5408 10.625 14.375 10.625H10C9.83424 10.625 9.67527 10.5592 9.55806 10.4419C9.44085 10.3247 9.375 10.1658 9.375 10V5.625C9.375 5.45924 9.44085 5.30027 9.55806 5.18306C9.67527 5.06585 9.83424 5 10 5C10.1658 5 10.3247 5.06585 10.4419 5.18306C10.5592 5.30027 10.625 5.45924 10.625 5.625V9.375H14.375C14.5408 9.375 14.6997 9.44085 14.8169 9.55806C14.9342 9.67527 15 9.83424 15 10Z" fill="#4F1C4C"/>
+                                    </svg>
+                                    <span>5 min read</span>
+                                </div>
+                                
+                                <div class="meta-item-authour">
+                                    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 10C10.663 10 11.2989 9.73661 11.7678 9.26777C12.2366 8.79893 12.5 8.16304 12.5 7.5C12.5 6.83696 12.2366 6.20107 11.7678 5.73223C11.2989 5.26339 10.663 5 10 5C9.33696 5 8.70107 5.26339 8.23223 5.73223C7.76339 6.20107 7.5 6.83696 7.5 7.5C7.5 8.16304 7.76339 8.79893 8.23223 9.26777C8.70107 9.73661 9.33696 10 10 10ZM10 11.25C8.89093 11.2484 7.82722 10.8102 7.03278 10.0266C6.23835 9.243 5.77341 8.17412 5.7375 7.065C5.7375 5.28938 6.9875 3.75 10 3.75C13.0125 3.75 14.2625 5.28938 14.2625 7.065C14.2266 8.17412 13.7617 9.243 12.9672 10.0266C12.1728 10.8102 11.1091 11.2484 10 11.25ZM17.5 15.9375C17.5 14.375 12.5 13.125 10 13.125C7.5 13.125 2.5 14.375 2.5 15.9375V17.5H17.5V15.9375ZM0 15.9375C0 13.125 10 11.25 10 11.25C10 11.25 20 13.125 20 15.9375V20H0V15.9375Z" fill="#4F1C4C"/>
+                                    </svg>
+                                    <span>By Rekha Malhotra</span>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <!-- Full-width Banner Image -->
+                    <div class="blog-banner">
+                        <img src="blogcard4.webp" alt="Energy Healing for Stress and Anxiety">
+                    </div>
+                    
+                    <p>The full moon has always carried an air of mystery, beauty, and deep spiritual power. Across cultures and centuries, it has been seen as a time of heightened energy a cosmic mirror reflecting not only the light of the sun but also the emotions, patterns, and desires we hold within. For those on a holistic wellness journey, the full moon presents a unique opportunity to release what no longer serves us and invite new manifestations into our lives.</p>
+                    
+                    <p>At Heal Holistic, we believe that tuning into lunar energy can open profound pathways of healing, balance, and transformation. Whether you are new to holistic practices or an experienced energy worker, full moon rituals can help you reconnect with your mind, body, and spirit.</p>
+                    
+                    <h2>Why the Full Moon Matters in Healing</h2>
+                    
+                    <p>The full moon is often described as a time of culmination when energy peaks and hidden truths come to light. Spiritually, it represents both illumination and release.</p>
+                    
+                    <ul>
+                        <li><strong>A Time of Completion</strong> – The lunar cycle symbolizes phases of growth, and the full moon is when projects, emotions, or karmic cycles reach their highest point.</li>
+                        <li><strong>Emotional Clarity</strong> – Many people report heightened emotions during the full moon. This can be a powerful moment for energy healing for stress and emotional release.</li>
+                        <li><strong>Manifestation Portal</strong> – Because the moon's energy is amplified, rituals performed during this time carry extra potency. Whether you're seeking inner peace, improved relationships, or abundance, the full moon can magnify your intentions.</li>
+                    </ul>
+                    
+                    <p>As Rekha Malhotra, a leading holistic healer in India, often reminds her community: "The moon does not just light up the night sky it illuminates our inner landscape too."</p>
+                    
+                    <h2>Preparing for a Full Moon Ritual</h2>
+                    
+                    <p>Before diving into the rituals, preparation is key. A ritual is not about following rules it's about creating a sacred space for your energy, mind, and soul to align.</p>
+                    
+                    <h3>1. Set Your Intention</h3>
+                    <p>Decide what you wish to release and what you want to invite into your life. This could be stress, limiting beliefs, or negative patterns or new beginnings, peace, and abundance.</p>
+                    
+                    <h3>2. Create a Sacred Space</h3>
+                    <p>Choose a quiet place in your home or outdoors under the moonlight. Light candles, place crystals, and play soft healing music. If you cannot be outdoors, visualizing the moon's light can be just as effective.</p>
+                    
+                    <h3>3. Cleanse Your Energy</h3>
+                    <p>Using sage, incense, or even guided meditation for anxiety and stress relief, clear the energy of your space and your aura. Many participants at Heal Holistic's online reiki healing circles say that this cleansing sets the tone for deeper healing.</p>
+                    
+                    <h2>Powerful Full Moon Rituals</h2>
+                    
+                    <h3>1. Moonlight Meditation</h3>
+                    <p>Sit comfortably under the moon or by a window where moonlight falls. Close your eyes and visualize the moonlight filling your body with healing light. This yoga and meditation practice helps align your mind, body, and spirit, leaving you centered and calm. This ritual doubles as mind-body-spirit healing and is often recommended for those looking for stress management techniques.</p>
+                    
+                    <h3>2. Reiki Energy Healing</h3>
+                    <p>The full moon amplifies the power of Reiki healing near me or even online. During this time, Reiki practitioners channel universal life force energy to help release blockages and restore balance.</p>
+                    <p>At Heal Holistic, Rekha Malhotra conducts virtual Reiki sessions that align perfectly with lunar energy, helping seekers experience deep emotional release and spiritual awakening.</p>
+                    
+                    <h3>3. Journaling & Release Writing</h3>
+                    <p>Write down everything you want to let go of fears, doubts, toxic relationships, or habits. Read your list aloud under the moon, then safely burn or bury it as a symbolic act of release.</p>
+                    <p>This ritual is one of the simplest yet most profound forms of natural wellness remedies, supporting both emotional and mental well-being.</p>
+                    
+                    <h3>4. Full Moon Water Ritual</h3>
+                    <p>Place a bowl of water under the moonlight overnight. In the morning, use it to wash your face or water your plants. This ritual is a way of absorbing the natural healing therapies of lunar energy.</p>
+                    
+                    <h3>5. Group Healing Circles</h3>
+                    <p>When done collectively, full moon rituals become even more powerful. Joining an online holistic wellness community helps participants feel supported, seen, and uplifted.</p>
+                    <p>Heal Holistic's virtual healing circles bring people together from across the globe, guided by Rekha Malhotra, one of the best holistic healers online.</p>
+                    
+                    <h2>Benefits of Full Moon Rituals</h2>
+                    
+                    <p>Performing full moon rituals consistently can create long-lasting changes in your life. Here's what seekers often experience:</p>
+                    
+                    <ul>
+                        <li><strong>Emotional Release:</strong> Letting go of negativity, grief, or fear.</li>
+                        <li><strong>Manifestation Power:</strong> Enhanced ability to attract abundance, love, or clarity.</li>
+                        <li><strong>Stress Reduction:</strong> These rituals double as energy healing for stress and anxiety.</li>
+                        <li><strong>Mind-Body-Spirit Alignment:</strong> A deeper connection to oneself, enhancing mental health and wellness.</li>
+                        <li><strong>Spiritual Growth:</strong> A sense of trust in the universe and your inner guidance.</li>
+                    </ul>
+                    
+                    <h2>The Role of Holistic Healing in India</h2>
+                    
+                    <p>India has always been a hub for natural healing therapies, Ayurveda wellness tips, and spiritual practices. Today, platforms like Heal Holistic blend ancient wisdom with modern accessibility through online Reiki, meditation, and wellness coaching.</p>
+                    
+                    <p>Many who search for holistic healing in India are discovering the value of rituals like these, alongside other practices such as:</p>
+                    
+                    <ul>
+                        <li>Self-care and mindfulness routines</li>
+                        <li>Wellness coaching online</li>
+                        <li>Ayurveda and yoga for holistic wellness</li>
+                        <li>Wellness retreats in India for deep transformation</li>
+                    </ul>
+                    
+                    <h2>Rekha Malhotra: Guiding You Through the Moon's Magic</h2>
+                    
+                    <p>While full moon rituals can be performed individually, working with a skilled guide makes the process more powerful. Rekha Malhotra, founder of Heal Holistic, has helped thousands of seekers align with lunar energy through Reiki, meditation, and energy healing.</p>
+                    
+                    <p>Her approach combines ancient practices with modern spiritual needs, making her one of the most trusted holistic healers in India. Whether you are looking for guided meditation for anxiety, wellness coaching online, or energy healing for stress, Rekha offers compassionate and transformative guidance.</p>
+                    
+                    <h2>Integrating Full Moon Rituals into Your Life</h2>
+                    
+                    <p>The full moon occurs once every month, offering us 12 opportunities a year for healing and manifestation. Here are some ways to stay consistent:</p>
+                    
+                    <ul>
+                        <li>Mark your calendar for upcoming full moons.</li>
+                        <li>Join Heal Holistic's online healing circles to stay committed.</li>
+                        <li>Blend rituals with other practices like yoga, Ayurveda wellness tips, and stress management techniques.</li>
+                        <li>Keep a manifestation journal to track your progress.</li>
+                    </ul>
+                    
+                    <p>Over time, these practices create a rhythm of release and renewal that supports a healthy lifestyle and emotional resilience.</p>
+                    
+                    <h2>Final Thoughts</h2>
+                    
+                    <p>Full moon rituals are more than spiritual traditions they are tools for personal empowerment, emotional release, and holistic healing. By engaging with the moon's energy, we align with nature's cycles and awaken our own ability to heal, release, and manifest.</p>
+                    
+                    <p>If you are ready to experience the power of the full moon, Heal Holistic offers the perfect platform to begin. Guided by Rekha Malhotra, you can join online circles, explore natural healing therapies, and embrace a lifestyle rooted in balance and harmony.</p>
+                    
+                    <p style="text-align: center; font-style: italic; margin-top: 30px;">Your journey to mind-body-spirit healing begins with one intention under the moonlight.</p>
+                    
+                </article>
+            </div>
+            
+            <!-- Mobile Menu Script -->
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Mobile Menu Toggle
+                    const mobileHamburger = document.getElementById('mobileHamburger');
+                    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+                    
+                    // Toggle mobile menu
+                    if (mobileHamburger) {
+                        mobileHamburger.addEventListener('click', function(e) {
+                            e.stopPropagation();
+                            mobileMenuOverlay.classList.toggle('active');
+                            document.body.style.overflow = mobileMenuOverlay.classList.contains('active') ? 'hidden' : '';
+                        });
+                    }
+                    
+                    // Close menu when clicking on a link
+                    const mobileMenuLinks = document.querySelectorAll('.mobile-nav-links a');
+                    mobileMenuLinks.forEach(link => {
+                        link.addEventListener('click', function() {
+                            mobileMenuOverlay.classList.remove('active');
+                            document.body.style.overflow = '';
+                        });
+                    });
+                    
+                    // Close menu when clicking outside
+                    mobileMenuOverlay.addEventListener('click', function(e) {
+                        if (e.target === mobileMenuOverlay) {
+                            mobileMenuOverlay.classList.remove('active');
+                            document.body.style.overflow = '';
+                        }
+                    });
+                    
+                    // Close menu when pressing Escape key
+                    document.addEventListener('keydown', function(e) {
+                        if (e.key === 'Escape' && mobileMenuOverlay.classList.contains('active')) {
+                            mobileMenuOverlay.classList.remove('active');
+                            document.body.style.overflow = '';
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</body>
+</html>
