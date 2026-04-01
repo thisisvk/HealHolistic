@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8YX7EHPL46"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8YX7EHPL46');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#2A0C4E">
+    <meta name="description" content="Gallery of healing sessions, workshops, and transformations with Rekha Malhotra at Heal Holistic.">
+    <link rel="canonical" href="https://healholistic.in/gallery.html" />
+    <link rel="icon" href="favicon/favpink.png" type="image/png" media="(prefers-color-scheme: light)">
+    <link rel="icon" href="favicon/favwhite.png" type="image/png" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Gallery | Heal Holistic | Rekha Malhotra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@400;700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Base ── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { overflow-x: hidden; }
+        body { font-family: 'Quicksand', sans-serif; background: #F4DEFA; color: #2A0C4E; }
+
+        /* ── Mobile menu ── */
+        @media (max-width: 1023px) {
+            .mobile-hamburger { position: fixed; top: 20px; right: 20px; z-index: 1000; cursor: pointer; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.1); border-radius: 5px; padding: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+            .mobile-hamburger img { width: 20px; height: 20px; opacity: 1; }
+            .mobile-menu-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #4F1C4C; z-index: 999; display: none; flex-direction: column; justify-content: flex-start; padding-top: 80px; box-sizing: border-box; overflow-y: auto; }
+            .mobile-menu-overlay.active { display: flex; animation: fadeIn 0.3s ease; }
+            .mobile-nav-links { list-style: none; padding: 0; margin: 18px; width: 100%; max-width: 300px; }
+            .mobile-nav-links a { color: white; text-decoration: none; font-family: 'Quicksand', sans-serif; font-weight: 500; font-size: 16px; line-height: 24px; display: block; padding: 14px 0; opacity: 1; }
+            .mobile-nav-links a:hover { color: #e4aef2; }
+            @keyframes fadeIn { from{opacity:0}to{opacity:1} }
+            .desktop-nav { display: none !important; }
+        }
+        @media (min-width: 1024px) { .mobile-hamburger, .mobile-menu-overlay { display: none !important; } }
+
+        /* ── Desktop nav ── */
+        .desktop-nav { position: fixed; top: 0; left: 0; width: 100%; background: #F4DEFA; backdrop-filter: blur(10px); z-index: 1000; padding: 15px 0; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .nav-inner { max-width: 1280px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 20px; }
+        .nav-links-ul { display: flex; gap: 30px; list-style: none; }
+        .nav-links-ul a { color: #2A0C4E; text-decoration: none; font-family: 'Quicksand', sans-serif; font-weight: 600; font-size: 15px; position: relative; transition: color 0.3s; }
+        .nav-links-ul a::after { content: ''; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background: #6D436A; transition: width 0.3s; }
+        .nav-links-ul a:hover::after { width: 100%; }
+        .nav-links-ul a:hover { color: #6D436A; }
+
+        /* ── Page wrapper ── */
+        .page-wrapper { padding-top: 80px; min-height: 100vh; }
+
+        /* ── Hero banner ── */
+        .gallery-hero {
+            background: linear-gradient(135deg, #4F1C4C 0%, #30112E 60%, #6D436A 100%);
+            padding: 60px 20px 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery-hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: url('spritual.svg') center/cover no-repeat;
+            opacity: 0.15;
+        }
+        .gallery-hero h1 { font-family: 'Poltawski Nowy', serif; font-size: clamp(32px, 5vw, 56px); font-weight: 700; color: #F2DA91; position: relative; z-index: 1; margin-bottom: 12px; }
+        .gallery-hero p { font-family: 'Quicksand', sans-serif; font-size: 18px; color: rgba(255,255,255,0.8); position: relative; z-index: 1; max-width: 500px; margin: 0 auto; }
+
+        /* ── Main content ── */
+        .gallery-main { max-width: 1200px; margin: 0 auto; padding: 60px 20px; }
+
+        /* ── View toggle: albums vs all photos ── */
+        .view-toggle { display: flex; gap: 12px; margin-bottom: 40px; }
+        .toggle-btn {
+            height: 40px; padding: 0 20px;
+            border: 2px solid #4F1C4C; border-radius: 5px;
+            font-family: 'Quicksand', sans-serif; font-weight: 600; font-size: 14px;
+            color: #4F1C4C; background: transparent; cursor: pointer;
+            transition: all 0.3s;
+        }
+        .toggle-btn.active, .toggle-btn:hover { background: #4F1C4C; color: white; }
+
+        /* ── Album grid ── */
+        .albums-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .album-card {
+            border-radius: 16px; overflow: hidden;
+            box-shadow: 3px 3px 12px rgba(48,17,46,0.15);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: white;
+        }
+        .album-card:hover { transform: translateY(-6px); box-shadow: 6px 6px 20px rgba(48,17,46,0.25); }
+        .album-cover {
+            width: 100%; height: 200px; object-fit: cover; display: block;
+            background: linear-gradient(135deg, #ECD5F2, #F4DEFA);
+        }
+        .album-cover-placeholder {
+            width: 100%; height: 200px; display: flex; align-items: center; justify-content: center;
+            background: linear-gradient(135deg, #ECD5F2, #F4DEFA);
+        }
+        .album-cover-placeholder svg { opacity: 0.4; }
+        .album-info { padding: 16px; }
+        .album-name { font-family: 'Poltawski Nowy', serif; font-size: 18px; font-weight: 700; color: #2A0C4E; margin-bottom: 6px; }
+        .album-desc { font-family: 'Quicksand', sans-serif; font-size: 13px; color: #6D436A; line-height: 1.5; margin-bottom: 10px; }
+        .album-count { font-family: 'Quicksand', sans-serif; font-size: 12px; font-weight: 600; color: #B7A2B6; }
+
+        /* ── Single album view ── */
+        .album-header { display: flex; align-items: center; gap: 16px; margin-bottom: 32px; }
+        .back-btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            color: #4F1C4C; text-decoration: none;
+            font-family: 'Quicksand', sans-serif; font-weight: 600; font-size: 15px;
+            border: 2px solid #4F1C4C; border-radius: 5px;
+            padding: 8px 16px; transition: all 0.3s;
+        }
+        .back-btn:hover { background: #4F1C4C; color: white; }
+        .album-title-bar h2 { font-family: 'Poltawski Nowy', serif; font-size: 28px; color: #2A0C4E; }
+        .album-title-bar p { font-family: 'Quicksand', sans-serif; font-size: 14px; color: #6D436A; margin-top: 4px; }
+
+        /* ── Photo grid ── */
+        .photos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        .photo-item {
+            border-radius: 12px; overflow: hidden;
+            box-shadow: 2px 2px 8px rgba(48,17,46,0.12);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            aspect-ratio: 4/3;
+        }
+        .photo-item:hover { transform: scale(1.03); box-shadow: 4px 4px 16px rgba(48,17,46,0.22); }
+        .photo-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+        /* ── Skeleton ── */
+        .sk { background: linear-gradient(90deg,#e8d5e8 25%,#f4e6f4 50%,#e8d5e8 75%); background-size:200% 100%; animation:sk 1.5s infinite; border-radius:16px; }
+        .sk-album { height: 280px; }
+        .sk-photo { aspect-ratio:4/3; border-radius:12px; }
+        @keyframes sk { 0%{background-position:200% 0}100%{background-position:-200% 0} }
+
+        /* ── Empty / error ── */
+        .empty-state { text-align: center; padding: 80px 20px; }
+        .empty-state h3 { font-family: 'Poltawski Nowy', serif; font-size: 24px; color: #4F1C4C; margin-bottom: 12px; }
+        .empty-state p { font-family: 'Quicksand', sans-serif; font-size: 16px; color: #6D436A; }
+
+        /* ── Lightbox ── */
+        .lightbox {
+            position: fixed; inset: 0; z-index: 9999;
+            background: rgba(30, 10, 30, 0.95);
+            display: none; align-items: center; justify-content: center;
+            padding: 20px;
+        }
+        .lightbox.open { display: flex; }
+        .lightbox-inner { position: relative; max-width: 900px; width: 100%; }
+        .lightbox-img { width: 100%; max-height: 80vh; object-fit: contain; border-radius: 10px; display: block; margin: 0 auto; }
+        .lightbox-caption { font-family: 'Quicksand', sans-serif; font-size: 15px; color: rgba(255,255,255,0.8); text-align: center; margin-top: 12px; }
+        .lb-close {
+            position: fixed; top: 20px; right: 20px;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: rgba(255,255,255,0.15); border: none;
+            color: white; font-size: 22px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s;
+        }
+        .lb-close:hover { background: rgba(255,255,255,0.3); }
+        .lb-nav {
+            position: fixed; top: 50%; transform: translateY(-50%);
+            width: 44px; height: 44px; border-radius: 50%;
+            background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3);
+            color: white; font-size: 20px; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s;
+        }
+        .lb-nav:hover { background: rgba(255,255,255,0.3); }
+        .lb-prev { left: 16px; }
+        .lb-next { right: 16px; }
+        .lb-counter { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); font-family: 'Quicksand', sans-serif; font-size: 13px; color: rgba(255,255,255,0.6); }
+
+        /* ── Footer ── */
+        footer { background: url("rectangle 17.svg") center center/cover no-repeat; padding: 60px 40px 0; color: #e4aef2; font-family: "Quicksand", sans-serif; min-height: 330px; width: 100%; box-sizing: border-box; }
+        .footer-main { display: flex; justify-content: space-between; align-items: flex-start; max-width: 1120px; margin: 0 auto; padding: 0 20px; margin-bottom: 20px; }
+        .footer-logo { flex: 0 0 auto; margin-top: -20px; }
+        .footer-logo-img { max-width: 160px; height: auto; }
+        .footer-content { display: flex; gap: 80px; }
+        .footer-col { min-width: 180px; }
+        .footer-col h3 { font-size: 2rem; font-weight: 700; color: #fff; margin-bottom: 24px; font-family: "Georgia", serif; }
+        .footer-contact-item { display: flex; align-items: center; gap: 12px; font-size: 16px; color: #e4aef2; margin-bottom: 18px; font-weight: 500; text-decoration: none; }
+        .footer-icon { width: 24px; height: 24px; object-fit: contain; }
+        .footer-svg-line { display: block; width: calc(100% - 80px); max-width: 1120px; height: 1px; border: none; background: #e4aef2; opacity: 0.3; margin: 60px auto 20px; }
+        .footer-bottom-text { text-align: left; width: calc(100% - 80px); max-width: 1120px; color: #e4aef2; font-size: 16px; line-height: 1.5; margin: 0 auto; padding-bottom: 20px; font-weight: 500; }
+        @media (max-width: 900px) {
+            footer { padding: 40px 20px 0; min-height: auto; }
+            .footer-main { flex-direction: column; gap: 30px; padding-bottom: 30px; }
+            .footer-logo { margin: 0 0 20px; }
+            .footer-content { flex-direction: column; gap: 30px; width: 100%; }
+            .footer-svg-line { margin: 30px 0; width: 100%; }
+            .footer-bottom-text { width: 100%; padding: 0; }
+        }
+        @media (max-width: 768px) {
+            .gallery-main { padding: 40px 16px; }
+            .albums-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; }
+            .album-cover, .album-cover-placeholder { height: 140px; }
+            .photos-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mobile Hamburger -->
+    <div class="mobile-hamburger" id="mobileHamburger">
+        <img src="ham.svg" alt="Menu" id="menuIcon">
+    </div>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <ul class="mobile-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="Reiki.html">Quantum Reiki</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Blog.html">Blogs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="form.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Desktop Nav -->
+    <nav class="desktop-nav">
+        <div class="nav-inner">
+            <a href="index.html"><img src="logopink.png" alt="Logo" style="height:25px;"></a>
+            <ul class="nav-links-ul">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Reiki.html">Quantum Reiki</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Blog.html">Blogs</a></li>
+                <li><a href="gallery.html" style="color:#4F1C4C;font-weight:700;">Gallery</a></li>
+                <li><a href="form.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <!-- Hero -->
+        <div class="gallery-hero">
+            <h1>Our Gallery</h1>
+            <p>Moments of transformation, healing, and divine energy captured in time.</p>
+        </div>
+
+        <!-- Main -->
+        <div class="gallery-main">
+
+            <!-- View toggle -->
+            <div class="view-toggle">
+                <button class="toggle-btn active" id="btnAlbums" onclick="showAlbums()">Albums</button>
+                <button class="toggle-btn" id="btnAll" onclick="showAllPhotos()">All Photos</button>
+            </div>
+
+            <!-- Albums view -->
+            <div id="albumsView">
+                <div class="albums-grid" id="albumsGrid">
+                    <!-- skeletons -->
+                    <div class="sk sk-album"></div>
+                    <div class="sk sk-album"></div>
+                    <div class="sk sk-album"></div>
+                    <div class="sk sk-album"></div>
+                </div>
+            </div>
+
+            <!-- Single album photos view -->
+            <div id="albumPhotosView" style="display:none;">
+                <div class="album-header">
+                    <button class="back-btn" onclick="backToAlbums()">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 4L6 8L10 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        Back to Albums
+                    </button>
+                    <div class="album-title-bar">
+                        <h2 id="currentAlbumName">Album</h2>
+                        <p id="currentAlbumDesc"></p>
+                    </div>
+                </div>
+                <div class="photos-grid" id="photosGrid">
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                </div>
+            </div>
+
+            <!-- All photos view (flat) -->
+            <div id="allPhotosView" style="display:none;">
+                <div class="photos-grid" id="allPhotosGrid">
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                    <div class="sk sk-photo"></div>
+                </div>
+            </div>
+
+        </div><!-- /gallery-main -->
+
+    </div><!-- /page-wrapper -->
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+        <button class="lb-close" id="lbClose" aria-label="Close lightbox">✕</button>
+        <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">‹</button>
+        <div class="lightbox-inner">
+            <img class="lightbox-img" id="lbImg" src="" alt="">
+            <p class="lightbox-caption" id="lbCaption"></p>
+        </div>
+        <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">›</button>
+        <div class="lb-counter" id="lbCounter"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-logo"><a href="index.html"><img src="logowhite.png" alt="Heal Holistic Logo" class="footer-logo-img"></a></div>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <div class="footer-contact-item"><img src="phone.svg" alt="Phone" class="footer-icon"><span>+91 99115 43666</span></div>
+                    <div class="footer-contact-item"><img src="mail.svg" alt="Mail" class="footer-icon"><span>connect@liveloveheal.in</span></div>
+                </div>
+                <div class="footer-col">
+                    <h3>Social</h3>
+                    <a href="https://www.instagram.com/live.love.heal_/" target="_blank" rel="noopener noreferrer" class="footer-contact-item"><img src="instagram.svg" alt="Instagram" class="footer-icon"><span>@live.love.heal_</span></a>
+                    <a href="https://www.youtube.com/channel/UCXP6nv-cUaW3L2nQLPuY1Ng" target="_blank" rel="noopener noreferrer" class="footer-contact-item"><img src="utube.svg" alt="YouTube" class="footer-icon"><span>@ReckhhaMalhotra</span></a>
+                    <a href="https://www.youtube.com/@rekhamalhotraenglish" target="_blank" rel="noopener noreferrer" class="footer-contact-item"><img src="utube.svg" alt="YouTube" class="footer-icon"><span>@rekhamalhotraenglish</span></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-svg-line">
+        <div class="footer-bottom-text">All Rights Reserved | Heal Holistic 2025</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="healholistic-seo.js"></script>
+
+    <script>
+    const SUPABASE_URL      = 'https://twwkrwueildchyjrhyuq.supabase.co';
+    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InR3d2tyd3VlaWxkY2h5anJoeXVxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MjMxNTgsImV4cCI6MjA5MDI5OTE1OH0.uFHaWuKEV2QMTbJ0-adnFaYmooDsnd-V4OBXRekr8NQ';
+    const _sb = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+    // ── State ──────────────────────────────────────────────────────────────────
+    let allAlbums      = [];
+    let currentPhotos  = [];  // photos in current lightbox context
+    let lbIndex        = 0;
+    let allPhotosCache = [];
+
+    // ── Lightbox ───────────────────────────────────────────────────────────────
+    function openLightbox(photos, index) {
+        currentPhotos = photos;
+        lbIndex = index;
+        renderLightbox();
+        document.getElementById('lightbox').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    function renderLightbox() {
+        const photo = currentPhotos[lbIndex];
+        document.getElementById('lbImg').src     = photo.url;
+        document.getElementById('lbImg').alt     = photo.caption || '';
+        document.getElementById('lbCaption').textContent = photo.caption || '';
+        document.getElementById('lbCounter').textContent = `${lbIndex + 1} / ${currentPhotos.length}`;
+    }
+
+    document.getElementById('lbClose').onclick = closeLightbox;
+    document.getElementById('lbPrev').onclick  = () => { lbIndex = (lbIndex - 1 + currentPhotos.length) % currentPhotos.length; renderLightbox(); };
+    document.getElementById('lbNext').onclick  = () => { lbIndex = (lbIndex + 1) % currentPhotos.length; renderLightbox(); };
+    document.getElementById('lightbox').addEventListener('click', e => { if (e.target === document.getElementById('lightbox')) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+        if (!document.getElementById('lightbox').classList.contains('open')) return;
+        if (e.key === 'Escape')     closeLightbox();
+        if (e.key === 'ArrowLeft')  document.getElementById('lbPrev').click();
+        if (e.key === 'ArrowRight') document.getElementById('lbNext').click();
+    });
+
+    // ── Photo item HTML ────────────────────────────────────────────────────────
+    function photoItem(photo, photos, index) {
+        const div = document.createElement('div');
+        div.className = 'photo-item';
+        div.innerHTML = `<img src="${photo.url}" alt="${photo.caption||''}" loading="lazy" onerror="this.src='bloghero.png'">`;
+        div.addEventListener('click', () => openLightbox(photos, index));
+        return div;
+    }
+
+    // ── ALBUMS VIEW ────────────────────────────────────────────────────────────
+    async function loadAlbums() {
+        const grid = document.getElementById('albumsGrid');
+
+        const { data: albums, error } = await _sb
+            .from('albums')
+            .select('id, name, description, cover_image, created_at')
+            .order('created_at', { ascending: false });
+
+        if (error || !albums || !albums.length) {
+            grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><h3>No albums yet</h3><p>Check back soon — our gallery is being curated with love.</p></div>`;
+            return;
+        }
+
+        allAlbums = albums;
+
+        // Fetch photo counts per album
+        const { data: photoCounts } = await _sb
+            .from('gallery_images')
+            .select('album_id');
+
+        const countMap = {};
+        (photoCounts || []).forEach(r => { countMap[r.album_id] = (countMap[r.album_id] || 0) + 1; });
+
+        grid.innerHTML = '';
+        albums.forEach(album => {
+            const card = document.createElement('div');
+            card.className = 'album-card';
+            const count = countMap[album.id] || 0;
+            card.innerHTML = `
+                ${album.cover_image
+                    ? `<img class="album-cover" src="${album.cover_image}" alt="${album.name}" loading="lazy" onerror="this.style.display='none'">`
+                    : `<div class="album-cover-placeholder"><svg width="48" height="48" viewBox="0 0 24 24" fill="none"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5z" stroke="#4F1C4C" stroke-width="1.5"/><circle cx="8.5" cy="9.5" r="1.5" fill="#4F1C4C"/><path d="M4 15l4-4 3 3 3-3 6 5" stroke="#4F1C4C" stroke-width="1.5" stroke-linecap="round"/></svg></div>`}
+                <div class="album-info">
+                    <div class="album-name">${album.name}</div>
+                    ${album.description ? `<div class="album-desc">${album.description}</div>` : ''}
+                    <div class="album-count">${count} photo${count !== 1 ? 's' : ''}</div>
+                </div>`;
+            card.addEventListener('click', () => openAlbum(album));
+            grid.appendChild(card);
+        });
+    }
+
+    // ── SINGLE ALBUM ───────────────────────────────────────────────────────────
+    async function openAlbum(album) {
+        document.getElementById('albumsView').style.display    = 'none';
+        document.getElementById('allPhotosView').style.display = 'none';
+        document.getElementById('albumPhotosView').style.display = 'block';
+
+        document.getElementById('currentAlbumName').textContent = album.name;
+        document.getElementById('currentAlbumDesc').textContent = album.description || '';
+
+        const grid = document.getElementById('photosGrid');
+        grid.innerHTML = '<div class="sk sk-photo"></div>'.repeat(6);
+
+        const { data: photos, error } = await _sb
+            .from('gallery_images')
+            .select('url, caption, description, sort_order')
+            .eq('album_id', album.id)
+            .order('sort_order', { ascending: true });
+
+        if (error || !photos || !photos.length) {
+            grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><h3>No photos in this album yet</h3></div>`;
+            return;
+        }
+
+        grid.innerHTML = '';
+        photos.forEach((photo, i) => grid.appendChild(photoItem(photo, photos, i)));
+    }
+
+    function backToAlbums() {
+        document.getElementById('albumPhotosView').style.display = 'none';
+        document.getElementById('albumsView').style.display = 'block';
+        document.getElementById('btnAlbums').classList.add('active');
+        document.getElementById('btnAll').classList.remove('active');
+    }
+
+    // ── ALL PHOTOS VIEW ────────────────────────────────────────────────────────
+    async function loadAllPhotos() {
+        const grid = document.getElementById('allPhotosGrid');
+        if (allPhotosCache.length) {
+            grid.innerHTML = '';
+            allPhotosCache.forEach((photo, i) => grid.appendChild(photoItem(photo, allPhotosCache, i)));
+            return;
+        }
+
+        const { data: photos, error } = await _sb
+            .from('gallery_images')
+            .select('url, caption, description, sort_order')
+            .order('sort_order', { ascending: true });
+
+        if (error || !photos || !photos.length) {
+            grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1"><h3>No photos yet</h3><p>Check back soon.</p></div>`;
+            return;
+        }
+
+        allPhotosCache = photos;
+        grid.innerHTML = '';
+        photos.forEach((photo, i) => grid.appendChild(photoItem(photo, photos, i)));
+    }
+
+    // ── Toggle views ───────────────────────────────────────────────────────────
+    function showAlbums() {
+        document.getElementById('albumsView').style.display     = 'block';
+        document.getElementById('allPhotosView').style.display  = 'none';
+        document.getElementById('albumPhotosView').style.display= 'none';
+        document.getElementById('btnAlbums').classList.add('active');
+        document.getElementById('btnAll').classList.remove('active');
+    }
+
+    function showAllPhotos() {
+        document.getElementById('albumsView').style.display     = 'none';
+        document.getElementById('albumPhotosView').style.display= 'none';
+        document.getElementById('allPhotosView').style.display  = 'block';
+        document.getElementById('btnAll').classList.add('active');
+        document.getElementById('btnAlbums').classList.remove('active');
+        loadAllPhotos();
+    }
+
+    // ── Mobile menu ────────────────────────────────────────────────────────────
+    document.addEventListener('DOMContentLoaded', function() {
+        loadAlbums();
+        HH_SEO.load('/gallery');
+
+        const hamburger = document.getElementById('mobileHamburger');
+        const overlay   = document.getElementById('mobileMenuOverlay');
+        const icon      = document.getElementById('menuIcon');
+
+        function toggleMenu(open) {
+            const isOpen = open !== undefined ? open : !overlay.classList.contains('active');
+            overlay.classList.toggle('active', isOpen);
+            document.body.style.overflow = isOpen ? 'hidden' : '';
+            icon.src = isOpen ? 'close.svg' : 'ham.svg';
+        }
+        hamburger.addEventListener('click', e => { e.stopPropagation(); toggleMenu(); });
+        document.querySelectorAll('.mobile-nav-links a').forEach(l => l.addEventListener('click', () => toggleMenu(false)));
+        document.addEventListener('click', e => { if (overlay.classList.contains('active') && !overlay.contains(e.target) && !hamburger.contains(e.target)) toggleMenu(false); });
+    });
+    </script>
+</body>
+</html>
